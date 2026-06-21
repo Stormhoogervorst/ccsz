@@ -264,7 +264,7 @@ export default function Home() {
                   key={benefit.title}
                   className="min-w-0 rounded-card bg-neutral-background-alt p-6 shadow-card sm:p-7"
                 >
-                  <div className="flex gap-5">
+                  <div className="flex flex-col gap-4 md:flex-row md:gap-5">
                     <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-pill bg-flexio-orange text-lg font-bold text-text-on-orange">
                       {index + 1}
                     </span>
