@@ -232,14 +232,14 @@ export default function Home() {
           className="border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page grid gap-12 py-20 md:grid-cols-12 md:items-start md:py-28 lg:gap-16">
-            <div className="md:sticky md:top-28 md:col-span-5 lg:col-span-5">
+            <div className="min-w-0 md:sticky md:top-28 md:col-span-5 lg:col-span-5">
               <span className="inline-flex rounded-pill bg-flexio-yellow px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-flexio-ink">
                 Wat je krijgt
               </span>
 
               <h2 className="mt-6 text-[clamp(1.85rem,3.4vw,2.85rem)] font-bold leading-[1.08] tracking-[-0.01em] text-text-primary">
-                <span className="block whitespace-nowrap">Wat de coöperatie</span>
-                <span className="block whitespace-nowrap">voor je doet</span>
+                <span className="block whitespace-normal sm:whitespace-nowrap">Wat de coöperatie</span>
+                <span className="block whitespace-normal sm:whitespace-nowrap">voor je doet</span>
               </h2>
 
               <div className="mt-9 flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row">
@@ -258,22 +258,22 @@ export default function Home() {
               </div>
             </div>
 
-            <ol className="grid gap-5 md:col-span-7 lg:col-span-7">
+            <ol className="grid min-w-0 gap-5 md:col-span-7 lg:col-span-7">
               {benefits.map((benefit, index) => (
                 <li
                   key={benefit.title}
-                  className="rounded-card bg-neutral-background-alt p-6 shadow-card sm:p-7"
+                  className="min-w-0 rounded-card bg-neutral-background-alt p-6 shadow-card sm:p-7"
                 >
                   <div className="flex gap-5">
                     <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-pill bg-flexio-orange text-lg font-bold text-text-on-orange">
                       {index + 1}
                     </span>
 
-                    <div>
-                      <h3 className="text-display-h3 text-text-primary">
+                    <div className="min-w-0">
+                      <h3 className="text-xl font-semibold leading-snug break-words text-text-primary sm:text-display-h3">
                         {benefit.title}
                       </h3>
-                      <p className="mt-3 text-body-lg text-text-secondary">
+                      <p className="mt-3 text-base text-text-secondary sm:text-body-lg">
                         {benefit.description}
                       </p>
                     </div>
@@ -368,14 +368,14 @@ export default function Home() {
           className="relative overflow-hidden border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page relative py-20 md:py-28">
-            <div className="relative z-10 ml-auto max-w-4xl text-right">
+            <div className="relative z-10 max-w-4xl text-left md:ml-auto md:text-right">
               <span className="inline-flex rounded-pill bg-flexio-yellow px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-flexio-ink">
                 Onze missie
               </span>
               <h2 className="mt-6 text-display-h2 text-flexio-ink">
                 Waarom dit ertoe doet
               </h2>
-              <p className="ml-auto mt-7 max-w-3xl text-body-lg text-flexio-secondary">
+              <p className="mt-7 max-w-3xl text-body-lg text-flexio-secondary md:ml-auto">
                 Cultuursensitieve zorg is geen aanvulling op reguliere zorg — het
                 is een onmisbare pijler van een inclusief zorgstelsel. Mensen
                 voelen zich gezien wanneer zorg aansluit bij hun taal, gewoonten
