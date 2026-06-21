@@ -144,7 +144,7 @@
     "scale": ["0", "0.25rem", "0.5rem", "0.75rem", "1rem", "1.5rem", "2rem", "3rem", "4rem", "6rem", "8rem", "10rem"],
     "sectionPaddingY": "6rem",
     "containerMaxWidth": "1280px",
-    "containerPaddingX": "clamp(1.5rem, 4vw, 4rem)",
+    "containerPaddingX": "clamp(2rem, 4vw, 4rem)",
     "gridGap": "1.5rem"
   },
   "radius": {

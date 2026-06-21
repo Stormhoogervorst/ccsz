@@ -67,18 +67,21 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative overflow-hidden bg-neutral-background">
-          {/* Floating accent orbs (decorative) — behind the text, mostly in the empty right zone */}
+          {/* Floating accent orbs (decorative) — behind the text (z-0 < z-10).
+              Desktop keeps the full scattered cluster; below tablet (md) the
+              large orbs are hidden so they never fall over the heading,
+              subtitle or buttons. */}
           <span
             aria-hidden="true"
-            className="solution-orb solution-orb-teal absolute right-6 top-20 z-0 h-24 w-24 rounded-full bg-flexio-teal sm:right-12 sm:h-28 sm:w-28 lg:right-24 lg:top-24 lg:h-36 lg:w-36"
+            className="solution-orb solution-orb-teal absolute right-6 top-20 z-0 hidden h-24 w-24 rounded-full bg-flexio-teal sm:right-12 sm:h-28 sm:w-28 md:block lg:right-24 lg:top-24 lg:h-36 lg:w-36"
           />
           <span
             aria-hidden="true"
-            className="solution-orb solution-orb-yellow absolute right-28 top-1/2 z-0 hidden h-16 w-16 rounded-full bg-flexio-yellow sm:block md:right-44 md:h-20 md:w-20 lg:right-64"
+            className="solution-orb solution-orb-yellow absolute right-28 top-1/2 z-0 hidden h-16 w-16 rounded-full bg-flexio-yellow md:right-44 md:block md:h-20 md:w-20 lg:right-64"
           />
           <span
             aria-hidden="true"
-            className="solution-orb solution-orb-orange absolute bottom-14 right-10 z-0 h-14 w-14 rounded-full bg-flexio-orange sm:right-20 sm:h-20 sm:w-20 lg:right-40"
+            className="solution-orb solution-orb-orange absolute bottom-14 right-10 z-0 hidden h-14 w-14 rounded-full bg-flexio-orange sm:right-20 sm:h-20 sm:w-20 md:block lg:right-40"
           />
           <span
             aria-hidden="true"
@@ -192,7 +195,7 @@ export default function Home() {
         {/* De oplossing */}
         <section className="relative overflow-hidden bg-neutral-background">
           <div className="container-page relative py-20 md:py-28">
-            <div className="max-w-4xl">
+            <div className="relative z-10 max-w-4xl">
               <span className="inline-flex rounded-pill bg-flexio-orange px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-flexio-surface">
                 De oplossing
               </span>
@@ -210,15 +213,15 @@ export default function Home() {
 
             <span
               aria-hidden="true"
-              className="solution-orb solution-orb-teal absolute right-6 top-14 hidden h-24 w-24 rounded-full bg-flexio-teal md:block lg:right-24 lg:h-28 lg:w-28"
+              className="solution-orb solution-orb-teal absolute right-6 top-14 z-0 hidden h-24 w-24 rounded-full bg-flexio-teal md:block lg:right-24 lg:h-28 lg:w-28"
             />
             <span
               aria-hidden="true"
-              className="solution-orb solution-orb-yellow absolute bottom-12 right-28 hidden h-24 w-24 rounded-full bg-flexio-yellow lg:block"
+              className="solution-orb solution-orb-yellow absolute bottom-12 right-28 z-0 hidden h-24 w-24 rounded-full bg-flexio-yellow lg:block"
             />
             <span
               aria-hidden="true"
-              className="solution-orb solution-orb-orange absolute bottom-8 left-6 h-20 w-20 rounded-full bg-flexio-orange md:left-auto md:right-72 md:h-28 md:w-28"
+              className="solution-orb solution-orb-orange absolute bottom-8 left-6 z-0 hidden h-20 w-20 rounded-full bg-flexio-orange md:left-auto md:right-72 md:block md:h-28 md:w-28"
             />
           </div>
         </section>
@@ -365,7 +368,7 @@ export default function Home() {
           className="relative overflow-hidden border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page relative py-20 md:py-28">
-            <div className="ml-auto max-w-4xl text-right">
+            <div className="relative z-10 ml-auto max-w-4xl text-right">
               <span className="inline-flex rounded-pill bg-flexio-yellow px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-flexio-ink">
                 Onze missie
               </span>
@@ -383,15 +386,15 @@ export default function Home() {
 
             <span
               aria-hidden="true"
-              className="solution-orb solution-orb-teal absolute left-6 top-14 hidden h-24 w-24 rounded-full bg-flexio-teal md:block lg:left-24 lg:h-28 lg:w-28"
+              className="solution-orb solution-orb-teal absolute left-6 top-14 z-0 hidden h-24 w-24 rounded-full bg-flexio-teal md:block lg:left-24 lg:h-28 lg:w-28"
             />
             <span
               aria-hidden="true"
-              className="solution-orb solution-orb-yellow absolute bottom-12 left-28 hidden h-24 w-24 rounded-full bg-flexio-yellow lg:block"
+              className="solution-orb solution-orb-yellow absolute bottom-12 left-28 z-0 hidden h-24 w-24 rounded-full bg-flexio-yellow lg:block"
             />
             <span
               aria-hidden="true"
-              className="solution-orb solution-orb-orange absolute bottom-8 left-6 h-20 w-20 rounded-full bg-flexio-orange md:left-72 md:h-28 md:w-28"
+              className="solution-orb solution-orb-orange absolute bottom-8 left-6 z-0 hidden h-20 w-20 rounded-full bg-flexio-orange md:left-72 md:block md:h-28 md:w-28"
             />
           </div>
         </section>

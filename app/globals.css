@@ -114,7 +114,7 @@
 
 :root {
   --container-max: 1280px;
-  --container-px: clamp(1.5rem, 4vw, 4rem);
+  --container-px: clamp(2rem, 4vw, 4rem);
 }
 
 @layer base {
