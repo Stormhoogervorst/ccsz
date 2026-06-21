@@ -1,0 +1,308 @@
+{
+  "name": "Flexio Design System",
+  "description": "Design system extracted from the Flexio business-consultancy template. Warm, energetic, editorial style built on a soft cream canvas with a vivid orange primary, playful rounded geometric shapes (half-circles, pills, bars), oversized bold display headlines, and pastel category accents. Pill-shaped buttons and tags recur throughout.",
+  "version": "1.0.0",
+  "brand": {
+    "logo": {
+      "mark": "Rounded half-circle (semicircle) sun/arch shape: orange top half over a dark navy-black bottom half",
+      "wordmark": "Flexio",
+      "wordmarkColor": "#1A1A1A",
+      "favicon": "Use the half-circle sun mark (no wordmark), orange-over-dark, on transparent or cream background",
+      "usage": "The semicircle mark works standalone as favicon/app icon; pair with the dark wordmark for the full lockup"
+    }
+  },
+  "color": {
+    "brand": {
+      "orange": {
+        "value": "#FB4D2A",
+        "name": "Signal Orange",
+        "role": "Primary accent / energy, primary buttons, tags, dark-section backgrounds"
+      },
+      "blue": {
+        "value": "#3B5BE0",
+        "name": "Electric Blue",
+        "role": "Category accent (e.g. Startup, Limited Success)"
+      },
+      "teal": {
+        "value": "#5FC2AD",
+        "name": "Soft Teal",
+        "role": "Category accent / freshness, geometric shape fills"
+      },
+      "yellow": {
+        "value": "#FBCB6A",
+        "name": "Warm Yellow",
+        "role": "Category accent / warmth, geometric half-circle fills"
+      },
+      "ink": {
+        "value": "#1A1A1A",
+        "name": "Near Black",
+        "role": "Display headlines, dark geometric shapes, body text, wordmark"
+      }
+    },
+    "primary": {
+      "50": "#FFE9E3",
+      "100": "#FFC9BC",
+      "300": "#FD8A72",
+      "500": "#FB4D2A",
+      "700": "#D2371A",
+      "900": "#8F2310"
+    },
+    "accent": {
+      "blue": "#3B5BE0",
+      "indigo": "#4A4DE6",
+      "teal": "#5FC2AD",
+      "yellow": "#FBCB6A",
+      "pink": "#F4B6C2",
+      "salmon": "#F6936F"
+    },
+    "neutral": {
+      "background": "#FBF4EC",
+      "backgroundAlt": "#F7EADD",
+      "surface": "#FFFFFF",
+      "surfaceMuted": "#F3E7DA",
+      "border": "#EADBCB",
+      "textPrimary": "#1A1A1A",
+      "textSecondary": "#5A534D",
+      "textMuted": "#9A8F84",
+      "textOnDark": "#FBF4EC",
+      "textOnOrange": "#FFFFFF"
+    },
+    "dark": {
+      "surface": "#1A1A1A",
+      "surfaceOrange": "#FB4D2A",
+      "gradientFrom": "#FB4D2A",
+      "gradientTo": "#D2371A"
+    },
+    "semantic": {
+      "info": "#3B5BE0",
+      "highlight": "#FB4D2A",
+      "success": "#5FC2AD",
+      "link": "#1A1A1A",
+      "linkUnderline": "#1A1A1A"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "display": "'Poppins', 'Sora', sans-serif",
+      "body": "'Poppins', 'Inter', sans-serif"
+    },
+    "scale": {
+      "hero": {
+        "fontSize": "clamp(3rem, 7vw, 6rem)",
+        "fontWeight": 700,
+        "lineHeight": 1.0,
+        "letterSpacing": "-0.02em"
+      },
+      "h1": {
+        "fontSize": "clamp(2.5rem, 5vw, 4.5rem)",
+        "fontWeight": 700,
+        "lineHeight": 1.05,
+        "letterSpacing": "-0.02em"
+      },
+      "h2": {
+        "fontSize": "clamp(2rem, 4vw, 3.25rem)",
+        "fontWeight": 700,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.01em"
+      },
+      "h3": {
+        "fontSize": "1.5rem",
+        "fontWeight": 600,
+        "lineHeight": 1.25
+      },
+      "statNumber": {
+        "fontSize": "clamp(2.5rem, 5vw, 3.75rem)",
+        "fontWeight": 700,
+        "lineHeight": 1.0,
+        "letterSpacing": "-0.02em"
+      },
+      "bodyLarge": {
+        "fontSize": "1.125rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6
+      },
+      "body": {
+        "fontSize": "1rem",
+        "fontWeight": 400,
+        "lineHeight": 1.6
+      },
+      "small": {
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": 1.5
+      },
+      "tag": {
+        "fontSize": "0.75rem",
+        "fontWeight": 600,
+        "lineHeight": 1.2,
+        "letterSpacing": "0.08em",
+        "textTransform": "uppercase"
+      }
+    }
+  },
+  "spacing": {
+    "scale": ["0", "0.25rem", "0.5rem", "0.75rem", "1rem", "1.5rem", "2rem", "3rem", "4rem", "6rem", "8rem", "10rem"],
+    "sectionPaddingY": "6rem",
+    "containerMaxWidth": "1280px",
+    "containerPaddingX": "clamp(1.5rem, 4vw, 4rem)",
+    "gridGap": "1.5rem"
+  },
+  "radius": {
+    "none": "0",
+    "sm": "8px",
+    "md": "16px",
+    "lg": "24px",
+    "xl": "32px",
+    "pill": "9999px",
+    "card": "20px",
+    "image": "16px",
+    "shapeHalfCircle": "9999px 9999px 0 0"
+  },
+  "shadow": {
+    "none": "none",
+    "sm": "0 1px 2px rgba(0,0,0,0.04)",
+    "md": "0 6px 20px rgba(0,0,0,0.06)",
+    "card": "0 4px 24px rgba(0,0,0,0.05)"
+  },
+  "components": {
+    "header": {
+      "background": "#F7EADD",
+      "layout": "pill-shaped floating navbar: logo left, nav links center-left, primary CTA pill right",
+      "borderRadius": "9999px",
+      "height": "64px",
+      "logoColor": "#1A1A1A",
+      "floating": true
+    },
+    "button": {
+      "primary": {
+        "background": "#FB4D2A",
+        "color": "#FFFFFF",
+        "borderRadius": "9999px",
+        "padding": "0.75rem 1.75rem",
+        "fontWeight": 600
+      },
+      "outline": {
+        "background": "transparent",
+        "color": "#FB4D2A",
+        "border": "1.5px solid #FB4D2A",
+        "borderRadius": "9999px",
+        "padding": "0.75rem 1.75rem",
+        "fontWeight": 600
+      },
+      "dark": {
+        "background": "#1A1A1A",
+        "color": "#FFFFFF",
+        "borderRadius": "9999px"
+      },
+      "onOrange": {
+        "background": "#FBF4EC",
+        "color": "#FB4D2A",
+        "borderRadius": "9999px"
+      }
+    },
+    "tag": {
+      "description": "Small uppercase pill label introducing a section (e.g. OUR SERVICE, WHO WE ARE, INDUSTRIES WE SERVE)",
+      "background": "#FB4D2A",
+      "color": "#FFFFFF",
+      "borderRadius": "9999px",
+      "padding": "0.35rem 0.85rem",
+      "onLight": {
+        "background": "#FB4D2A",
+        "color": "#FFFFFF"
+      },
+      "onOrange": {
+        "background": "#FFFFFF",
+        "color": "#FB4D2A"
+      }
+    },
+    "statCard": {
+      "background": "#FB4D2A",
+      "color": "#FFFFFF",
+      "borderRadius": "20px",
+      "padding": "2rem",
+      "numberColor": "#FFFFFF",
+      "labelColor": "rgba(255,255,255,0.85)"
+    },
+    "serviceCard": {
+      "description": "Image-filled card with title and plus icon top, caption bottom, dark gradient overlay for legibility",
+      "borderRadius": "20px",
+      "overlay": "linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0))",
+      "titleColor": "#FFFFFF",
+      "captionColor": "rgba(255,255,255,0.9)",
+      "plusIcon": "circular, semi-transparent white background"
+    },
+    "processCard": {
+      "description": "Numbered step card: orange circular number badge, bold title, muted description",
+      "background": "#F7EADD",
+      "borderRadius": "16px",
+      "padding": "1.5rem",
+      "badgeBackground": "#FB4D2A",
+      "badgeColor": "#FFFFFF",
+      "badgeRadius": "9999px"
+    },
+    "categoryPill": {
+      "description": "Large rounded pill tags in assorted brand colors, scattered/staggered layout (Tech Company, Startup, Nonprofit, etc.)",
+      "borderRadius": "9999px",
+      "padding": "0.85rem 1.75rem",
+      "fontWeight": 600,
+      "colorways": ["#FBCB6A", "#5FC2AD", "#3B5BE0", "#F4B6C2", "#FB4D2A", "#F6936F", "#1A1A1A"]
+    },
+    "checkItem": {
+      "description": "List row with orange starburst/seal check icon, bold lead-in then muted detail",
+      "iconColor": "#FB4D2A",
+      "iconShape": "starburst seal"
+    },
+    "ctaSection": {
+      "background": "#FB4D2A",
+      "color": "#FFFFFF",
+      "tag": "white pill with orange text",
+      "buttons": "dark primary + light outline",
+      "accentShapes": "geometric half-circles, vertical bars, and circles along the bottom edge in blue/yellow/teal/dark"
+    },
+    "footer": {
+      "background": "#FBF4EC",
+      "color": "#1A1A1A",
+      "layout": "multi-column link lists (Page, Social, Studio) + email lead, with an oversized wordmark spanning the bottom edge",
+      "oversizedWordmark": true
+    },
+    "logoBar": {
+      "description": "Client logo strip on orange band with section tag and headline above, muted/monochrome logos divided by thin separators",
+      "background": "#FB4D2A",
+      "logoColor": "rgba(255,255,255,0.7)"
+    }
+  },
+  "graphicElements": {
+    "geometricShapes": {
+      "description": "Bold rounded geometric primitives used decoratively along section edges and in hero",
+      "primitives": ["half-circle (semicircle)", "full circle split in two colors", "rounded vertical bars", "stacked half-circles"],
+      "colorways": ["#FB4D2A", "#3B5BE0", "#5FC2AD", "#FBCB6A", "#1A1A1A"],
+      "usage": "Hero base, CTA bottom edge, footer — playful editorial punctuation"
+    },
+    "circularPortraits": {
+      "description": "Circular cropped people photos arranged in a staggered row across the hero base",
+      "shape": "circle",
+      "arrangement": "horizontal staggered row, varying vertical offset"
+    },
+    "floatingLabels": {
+      "description": "Tilted pill labels floating over imagery (e.g. LOST OPPORTUNITIES, LACK OF EXPERTISE, LIMITED SUCCESS)",
+      "borderRadius": "9999px",
+      "rotation": "slight tilt",
+      "colorways": ["#FB4D2A", "#5FC2AD", "#3B5BE0"]
+    }
+  },
+  "layout": {
+    "philosophy": "Warm cream canvas, vivid orange energy, oversized bold display headlines, generous whitespace, playful rounded geometry, pill-shaped interactive elements, staggered/asymmetric decorative arrangements, alternating light and orange sections",
+    "sections": [
+      "Floating pill navbar (logo, nav, CTA)",
+      "Hero: section tag + oversized headline + subtitle + dual CTA pills, with staggered circular portraits and geometric shapes along the base",
+      "Logo bar on orange band (client trust strip)",
+      "Who-we-are stat band: section tag + headline + three orange stat cards",
+      "Challenges/barriers split: headline + check-list left, image with floating tilted labels right",
+      "Services grid: three image cards with title, plus icon, and caption",
+      "Industries-we-serve: headline + scattered colored category pills",
+      "Process/approach split: headline + dual CTA left, numbered step cards right",
+      "Final CTA on orange band with geometric shapes and a photo circle",
+      "Footer with link columns and oversized wordmark"
+    ]
+  }
+}
