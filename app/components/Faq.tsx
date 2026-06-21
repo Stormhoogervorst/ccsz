@@ -50,8 +50,8 @@ export function Faq() {
             key={item.question}
             className={`overflow-hidden rounded-card transition-all duration-300 ${
               isOpen
-                ? "bg-flexio-surface shadow-card ring-1 ring-flexio-orange/20"
-                : "bg-neutral-background-alt shadow-sm hover:bg-flexio-surface hover:shadow-card"
+                ? "bg-neutral-surface shadow-card ring-1 ring-forest/20"
+                : "bg-neutral-background-alt shadow-sm hover:bg-neutral-surface hover:shadow-card"
             }`}
           >
             <h3>
@@ -67,7 +67,7 @@ export function Faq() {
               >
                 <span
                   className={`text-lg font-semibold tracking-tight transition-colors md:text-xl ${
-                    isOpen ? "text-flexio-orange" : "text-text-primary"
+                    isOpen ? "text-forest" : "text-text-primary"
                   }`}
                 >
                   {item.question}
@@ -76,8 +76,8 @@ export function Faq() {
                   aria-hidden="true"
                   className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-pill transition-all duration-300 ${
                     isOpen
-                      ? "rotate-45 bg-flexio-orange text-text-on-orange"
-                      : "bg-flexio-surface text-text-secondary"
+                      ? "rotate-45 bg-forest text-text-on-dark"
+                      : "bg-neutral-surface text-text-secondary"
                   }`}
                 >
                   <svg

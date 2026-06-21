@@ -1,60 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  /* Flexio design system colors */
-  --color-flexio-orange: #fb4d2a;
-  --color-flexio-blue: #3b5be0;
-  --color-flexio-teal: #5fc2ad;
-  --color-flexio-yellow: #fbcb6a;
-  --color-flexio-ink: #1a1a1a;
-  --color-flexio-pink: #f4b6c2;
-  --color-flexio-salmon: #f6936f;
-  --color-flexio-indigo: #4a4de6;
-  --color-flexio-secondary: #5a534d;
-  --color-flexio-surface: #ffffff;
-  --color-flexio-surface-muted: #f3e7da;
-
-  /* Primary scale (Flexio signal orange) */
-  --color-primary-50: #ffe9e3;
-  --color-primary-100: #ffc9bc;
-  --color-primary-300: #fd8a72;
-  --color-primary-500: #fb4d2a;
-  --color-primary-700: #d2371a;
-  --color-primary-900: #8f2310;
+  /* CCSZ green palette — single source of truth (vervangt het oude oranje/cream Flexio-palet) */
 
   /* Accents */
-  --color-accent-blue: #3b5be0;
-  --color-accent-indigo: #4a4de6;
-  --color-accent-teal: #5fc2ad;
-  --color-accent-yellow: #fbcb6a;
-  --color-accent-pink: #f4b6c2;
-  --color-accent-salmon: #f6936f;
+  --color-lime: #c8e85f; /* primair accent / energie — vervangt signal orange */
+  --color-lime-soft: #d4ed6e; /* lichtere accentvariant voor grote vlakken/hovers */
+  --color-forest: #1e3a24; /* diep bosgroen — primaire CTA, donkere secties/kaarten */
+  --color-forest-dark: #16301c; /* hover / dieper bosgroen */
+  --color-forest-medium: #3e5e3a; /* medium bosgroen — secundaire groene vlakken */
+  --color-green: #4e9f47; /* helder groen — tertiair accent, iconen */
+  --color-lila: #d8d4f0; /* zacht lila — spaarzaam contrast-accent */
 
   /* Neutrals */
-  --color-neutral-background: #fbf4ec;
-  --color-neutral-background-alt: #f7eadd;
+  --color-neutral-background: #f4f4ef;
+  --color-neutral-background-alt: #ebebe4;
   --color-neutral-surface: #ffffff;
-  --color-neutral-surface-muted: #f3e7da;
-  --color-neutral-border: #eadbcb;
+  --color-neutral-surface-muted: #e8e8e0;
+  --color-neutral-border: #dadad0;
 
   /* Text */
-  --color-text-primary: #1a1a1a;
-  --color-text-secondary: #5a534d;
-  --color-text-muted: #9a8f84;
-  --color-text-on-dark: #fbf4ec;
-  --color-text-on-orange: #ffffff;
-
-  /* Dark sections */
-  --color-dark-surface: #1a1a1a;
-  --color-dark-surface-orange: #fb4d2a;
-  --color-dark-gradient-from: #fb4d2a;
-  --color-dark-gradient-to: #d2371a;
+  --color-text-primary: #1a2a1c;
+  --color-text-secondary: #4a554a;
+  --color-text-muted: #8a938a;
+  --color-text-on-dark: #f4f4ef; /* lichte tekst op bosgroen */
+  --color-text-on-lime: #1e3a24; /* donkere tekst op lime/lila (nooit wit op lime) */
 
   /* Semantic */
-  --color-info: #3b5be0;
-  --color-highlight: #fb4d2a;
-  --color-success: #5fc2ad;
-  --color-link: #1a1a1a;
+  --color-info: #4e9f47;
+  --color-highlight: #c8e85f;
+  --color-success: #4e9f47;
+  --color-link: #1a2a1c;
 
   /* Fonts */
   --font-display: var(--font-poppins), "Sora", sans-serif;
@@ -151,35 +127,5 @@
     letter-spacing: var(--text-overline--letter-spacing);
     font-weight: var(--text-overline--font-weight);
     text-transform: uppercase;
-  }
-
-  .solution-orb {
-    animation: solution-orb-float 8s ease-in-out infinite alternate;
-    will-change: transform;
-  }
-
-  .solution-orb-teal {
-    animation-duration: 7s;
-    animation-delay: -1s;
-  }
-
-  .solution-orb-yellow {
-    animation-duration: 9s;
-    animation-delay: -3s;
-  }
-
-  .solution-orb-orange {
-    animation-duration: 8.5s;
-    animation-delay: -2s;
-  }
-}
-
-@keyframes solution-orb-float {
-  from {
-    transform: translate3d(0, -6px, 0);
-  }
-
-  to {
-    transform: translate3d(10px, 8px, 0);
   }
 }

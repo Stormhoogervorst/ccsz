@@ -58,7 +58,7 @@ export function ServicesList() {
             key={service.title}
             className={`border-b transition-colors duration-300 ${
               isActive
-                ? "border-dark-surface bg-dark-surface text-text-on-dark"
+                ? "border-forest bg-forest text-text-on-dark"
                 : "border-neutral-border text-text-primary"
             }`}
             onMouseEnter={() => setActive(index)}

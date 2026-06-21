@@ -6,79 +6,83 @@
     "logo": {
       "mark": "Rounded half-circle (semicircle) sun/arch shape: orange top half over a dark navy-black bottom half",
       "wordmark": "Flexio",
-      "wordmarkColor": "#1A1A1A",
+      "wordmarkColor": "#1A2A1C",
       "favicon": "Use the half-circle sun mark (no wordmark), orange-over-dark, on transparent or cream background",
       "usage": "The semicircle mark works standalone as favicon/app icon; pair with the dark wordmark for the full lockup"
     }
   },
   "color": {
     "brand": {
-      "orange": {
-        "value": "#FB4D2A",
-        "name": "Signal Orange",
-        "role": "Primary accent / energy, primary buttons, tags, dark-section backgrounds"
+      "lime": {
+        "value": "#C8E85F",
+        "name": "Limoen Lime",
+        "role": "Primair accent / energie, accentbanden, highlight-pills (altijd donkere tekst)"
       },
-      "blue": {
-        "value": "#3B5BE0",
-        "name": "Electric Blue",
-        "role": "Category accent (e.g. Startup, Limited Success)"
+      "green": {
+        "value": "#4E9F47",
+        "name": "Helder Groen",
+        "role": "Tertiair accent / interactie, iconen, category accent"
       },
-      "teal": {
-        "value": "#5FC2AD",
-        "name": "Soft Teal",
-        "role": "Category accent / freshness, geometric shape fills"
+      "forestMedium": {
+        "value": "#3E5E3A",
+        "name": "Medium Bosgroen",
+        "role": "Secundaire groene vlakken, kaarten op donkere secties, shape fills"
       },
-      "yellow": {
-        "value": "#FBCB6A",
-        "name": "Warm Yellow",
-        "role": "Category accent / warmth, geometric half-circle fills"
+      "lila": {
+        "value": "#D8D4F0",
+        "name": "Zacht Lila",
+        "role": "Subtiel contrast-accent (spaarzaam), enkele tag of pill"
+      },
+      "forest": {
+        "value": "#1E3A24",
+        "name": "Diep Bosgroen",
+        "role": "Primaire CTA, donkere sectie-achtergronden, stat-cards (altijd lichte tekst)"
       },
       "ink": {
-        "value": "#1A1A1A",
-        "name": "Near Black",
-        "role": "Display headlines, dark geometric shapes, body text, wordmark"
+        "value": "#1A2A1C",
+        "name": "Bijna-zwart Groen",
+        "role": "Display headlines, body text, wordmark"
       }
     },
     "primary": {
-      "50": "#FFE9E3",
-      "100": "#FFC9BC",
-      "300": "#FD8A72",
-      "500": "#FB4D2A",
-      "700": "#D2371A",
-      "900": "#8F2310"
+      "50": "#EEF6E0",
+      "100": "#DCEDC0",
+      "300": "#A9D56A",
+      "500": "#1E3A24",
+      "700": "#16301C",
+      "900": "#0F2414"
     },
     "accent": {
-      "blue": "#3B5BE0",
-      "indigo": "#4A4DE6",
-      "teal": "#5FC2AD",
-      "yellow": "#FBCB6A",
-      "pink": "#F4B6C2",
-      "salmon": "#F6936F"
+      "green": "#4E9F47",
+      "forestMedium": "#3E5E3A",
+      "lime": "#C8E85F",
+      "limeSoft": "#D4ED6E",
+      "lila": "#D8D4F0"
     },
     "neutral": {
-      "background": "#FBF4EC",
-      "backgroundAlt": "#F7EADD",
+      "background": "#F4F4EF",
+      "backgroundAlt": "#EBEBE4",
       "surface": "#FFFFFF",
-      "surfaceMuted": "#F3E7DA",
-      "border": "#EADBCB",
-      "textPrimary": "#1A1A1A",
-      "textSecondary": "#5A534D",
-      "textMuted": "#9A8F84",
-      "textOnDark": "#FBF4EC",
-      "textOnOrange": "#FFFFFF"
+      "surfaceMuted": "#E8E8E0",
+      "border": "#DADAD0",
+      "textPrimary": "#1A2A1C",
+      "textSecondary": "#4A554A",
+      "textMuted": "#8A938A",
+      "textOnDark": "#F4F4EF",
+      "textOnLime": "#1E3A24"
     },
     "dark": {
-      "surface": "#1A1A1A",
-      "surfaceOrange": "#FB4D2A",
-      "gradientFrom": "#FB4D2A",
-      "gradientTo": "#D2371A"
+      "surface": "#1E3A24",
+      "surfaceAccent": "#1E3A24",
+      "gradientFrom": "#1E3A24",
+      "gradientTo": "#16301C"
     },
     "semantic": {
-      "info": "#3B5BE0",
-      "highlight": "#FB4D2A",
-      "success": "#5FC2AD",
-      "link": "#1A1A1A",
-      "linkUnderline": "#1A1A1A"
+      "info": "#4E9F47",
+      "highlight": "#C8E85F",
+      "success": "#4E9F47",
+      "link": "#1A2A1C",
+      "linkUnderline": "#1A2A1C"
     }
   },
   "typography": {
@@ -166,62 +170,62 @@
   },
   "components": {
     "header": {
-      "background": "#F7EADD",
+      "background": "#EBEBE4",
       "layout": "pill-shaped floating navbar: logo left, nav links center-left, primary CTA pill right",
       "borderRadius": "9999px",
       "height": "64px",
-      "logoColor": "#1A1A1A",
+      "logoColor": "#1A2A1C",
       "floating": true
     },
     "button": {
       "primary": {
-        "background": "#FB4D2A",
-        "color": "#FFFFFF",
+        "background": "#1E3A24",
+        "color": "#F4F4EF",
         "borderRadius": "9999px",
         "padding": "0.75rem 1.75rem",
         "fontWeight": 600
       },
       "outline": {
         "background": "transparent",
-        "color": "#FB4D2A",
-        "border": "1.5px solid #FB4D2A",
+        "color": "#1E3A24",
+        "border": "1.5px solid #1E3A24",
         "borderRadius": "9999px",
         "padding": "0.75rem 1.75rem",
         "fontWeight": 600
       },
       "dark": {
-        "background": "#1A1A1A",
-        "color": "#FFFFFF",
+        "background": "#1A2A1C",
+        "color": "#F4F4EF",
         "borderRadius": "9999px"
       },
-      "onOrange": {
-        "background": "#FBF4EC",
-        "color": "#FB4D2A",
+      "onForest": {
+        "background": "#FFFFFF",
+        "color": "#1E3A24",
         "borderRadius": "9999px"
       }
     },
     "tag": {
-      "description": "Small uppercase pill label introducing a section (e.g. OUR SERVICE, WHO WE ARE, INDUSTRIES WE SERVE)",
-      "background": "#FB4D2A",
-      "color": "#FFFFFF",
+      "description": "Small uppercase pill label introducing a section; alternates between lime, forest-green and soft lila",
+      "background": "#1E3A24",
+      "color": "#F4F4EF",
       "borderRadius": "9999px",
       "padding": "0.35rem 0.85rem",
       "onLight": {
-        "background": "#FB4D2A",
-        "color": "#FFFFFF"
+        "background": "#1E3A24",
+        "color": "#F4F4EF"
       },
-      "onOrange": {
+      "onForest": {
         "background": "#FFFFFF",
-        "color": "#FB4D2A"
+        "color": "#1E3A24"
       }
     },
     "statCard": {
-      "background": "#FB4D2A",
-      "color": "#FFFFFF",
+      "background": "#1E3A24",
+      "color": "#F4F4EF",
       "borderRadius": "20px",
       "padding": "2rem",
-      "numberColor": "#FFFFFF",
-      "labelColor": "rgba(255,255,255,0.85)"
+      "numberColor": "#C8E85F",
+      "labelColor": "rgba(244,244,239,0.85)"
     },
     "serviceCard": {
       "description": "Image-filled card with title and plus icon top, caption bottom, dark gradient overlay for legibility",
@@ -232,50 +236,50 @@
       "plusIcon": "circular, semi-transparent white background"
     },
     "processCard": {
-      "description": "Numbered step card: orange circular number badge, bold title, muted description",
-      "background": "#F7EADD",
+      "description": "Numbered step card: forest-green circular number badge, bold title, muted description",
+      "background": "#EBEBE4",
       "borderRadius": "16px",
       "padding": "1.5rem",
-      "badgeBackground": "#FB4D2A",
-      "badgeColor": "#FFFFFF",
+      "badgeBackground": "#1E3A24",
+      "badgeColor": "#F4F4EF",
       "badgeRadius": "9999px"
     },
     "categoryPill": {
-      "description": "Large rounded pill tags in assorted brand colors, scattered/staggered layout (Tech Company, Startup, Nonprofit, etc.)",
+      "description": "Large rounded pill tags in assorted green/lila accent colors, scattered/staggered layout (no two adjacent the same)",
       "borderRadius": "9999px",
       "padding": "0.85rem 1.75rem",
       "fontWeight": 600,
-      "colorways": ["#FBCB6A", "#5FC2AD", "#3B5BE0", "#F4B6C2", "#FB4D2A", "#F6936F", "#1A1A1A"]
+      "colorways": ["#C8E85F", "#1E3A24", "#3E5E3A", "#4E9F47", "#D8D4F0"]
     },
     "checkItem": {
-      "description": "List row with orange starburst/seal check icon, bold lead-in then muted detail",
-      "iconColor": "#FB4D2A",
+      "description": "List row with bright-green starburst/seal check icon, bold lead-in then muted detail",
+      "iconColor": "#4E9F47",
       "iconShape": "starburst seal"
     },
     "ctaSection": {
-      "background": "#FB4D2A",
-      "color": "#FFFFFF",
-      "tag": "white pill with orange text",
-      "buttons": "dark primary + light outline",
-      "accentShapes": "geometric half-circles, vertical bars, and circles along the bottom edge in blue/yellow/teal/dark"
+      "background": "#1E3A24",
+      "color": "#F4F4EF",
+      "tag": "white pill with forest-green text",
+      "buttons": "lime primary (dark text) + light outline",
+      "accentShapes": "geometric half-circles, vertical bars, and circles along the bottom edge in lime/green/forest-medium/lila"
     },
     "footer": {
-      "background": "#FBF4EC",
-      "color": "#1A1A1A",
+      "background": "#F4F4EF",
+      "color": "#1A2A1C",
       "layout": "multi-column link lists (Page, Social, Studio) + email lead, with an oversized wordmark spanning the bottom edge",
       "oversizedWordmark": true
     },
     "logoBar": {
-      "description": "Client logo strip on orange band with section tag and headline above, muted/monochrome logos divided by thin separators",
-      "background": "#FB4D2A",
-      "logoColor": "rgba(255,255,255,0.7)"
+      "description": "Client logo strip on forest-green band with section tag and headline above, muted/monochrome logos divided by thin separators",
+      "background": "#1E3A24",
+      "logoColor": "rgba(244,244,239,0.7)"
     }
   },
   "graphicElements": {
     "geometricShapes": {
       "description": "Bold rounded geometric primitives used decoratively along section edges and in hero",
       "primitives": ["half-circle (semicircle)", "full circle split in two colors", "rounded vertical bars", "stacked half-circles"],
-      "colorways": ["#FB4D2A", "#3B5BE0", "#5FC2AD", "#FBCB6A", "#1A1A1A"],
+      "colorways": ["#C8E85F", "#4E9F47", "#3E5E3A", "#D8D4F0", "#1E3A24"],
       "usage": "Hero base, CTA bottom edge, footer — playful editorial punctuation"
     },
     "circularPortraits": {
@@ -287,7 +291,7 @@
       "description": "Tilted pill labels floating over imagery (e.g. LOST OPPORTUNITIES, LACK OF EXPERTISE, LIMITED SUCCESS)",
       "borderRadius": "9999px",
       "rotation": "slight tilt",
-      "colorways": ["#FB4D2A", "#5FC2AD", "#3B5BE0"]
+      "colorways": ["#1E3A24", "#4E9F47", "#D8D4F0"]
     }
   },
   "layout": {

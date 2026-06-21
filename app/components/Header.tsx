@@ -46,7 +46,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             <a
               href="#contact"
-              className="hidden rounded-pill bg-flexio-orange px-5 py-2.5 text-sm font-semibold text-text-on-orange transition-colors hover:bg-primary-700 sm:inline-flex"
+              className="hidden rounded-pill bg-forest px-5 py-2.5 text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark sm:inline-flex"
             >
               Word lid
             </a>
@@ -96,7 +96,7 @@ export function Header() {
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="block rounded-pill bg-flexio-orange px-5 py-3 text-center text-sm font-semibold text-text-on-orange transition-colors hover:bg-primary-700"
+                  className="block rounded-pill bg-forest px-5 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
                 >
                   Word lid
                 </a>

@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 
 type Pill = {
   label: string;
-  /** Flexio colorway classes (background + readable text). */
+  /** Green colorway classes (background + readable text). */
   color: string;
   /** Desktop scatter anchor (percentage from the left edge of the field). */
   left: string;
@@ -20,12 +20,13 @@ type Pill = {
   delay: number;
 };
 
-// Colours alternate across the Flexio colorways palette so no two adjacent
-// pills share a colour. Keywords + colours match the existing section.
+// Colours alternate across the green/lila accent palette so no two adjacent
+// pills share a colour. Lime and lila always carry dark text; the forest and
+// green tones always carry light text (see contrast rules).
 const pills: Pill[] = [
   {
     label: "Identiteit",
-    color: "bg-flexio-pink text-flexio-ink",
+    color: "bg-lila text-text-on-lime",
     left: "10%",
     top: 16,
     rotate: -6,
@@ -36,7 +37,7 @@ const pills: Pill[] = [
   },
   {
     label: "Versterken",
-    color: "bg-flexio-orange text-text-on-orange",
+    color: "bg-forest text-text-on-dark",
     left: "27%",
     top: 4,
     rotate: 5,
@@ -47,7 +48,7 @@ const pills: Pill[] = [
   },
   {
     label: "Zelfstandig",
-    color: "bg-flexio-yellow text-flexio-ink",
+    color: "bg-lime text-text-on-lime",
     left: "16%",
     top: 70,
     rotate: -3,
@@ -58,7 +59,7 @@ const pills: Pill[] = [
   },
   {
     label: "Impact",
-    color: "bg-flexio-blue text-text-on-orange",
+    color: "bg-green text-text-on-dark",
     left: "45%",
     top: -4,
     rotate: 7,
@@ -69,7 +70,7 @@ const pills: Pill[] = [
   },
   {
     label: "Coöperatie",
-    color: "bg-flexio-teal text-flexio-surface",
+    color: "bg-forest-medium text-text-on-dark",
     left: "54%",
     top: 20,
     rotate: -5,
@@ -80,7 +81,7 @@ const pills: Pill[] = [
   },
   {
     label: "Zorg",
-    color: "bg-flexio-salmon text-text-on-orange",
+    color: "bg-lime text-text-on-lime",
     left: "74%",
     top: 12,
     rotate: 4,
@@ -91,7 +92,7 @@ const pills: Pill[] = [
   },
   {
     label: "Samen",
-    color: "bg-flexio-ink text-text-on-dark",
+    color: "bg-forest text-text-on-dark",
     left: "37%",
     top: 80,
     rotate: -7,
@@ -102,7 +103,7 @@ const pills: Pill[] = [
   },
   {
     label: "Cultuursensitief",
-    color: "bg-flexio-blue text-text-on-orange",
+    color: "bg-green text-text-on-dark",
     left: "52%",
     top: 74,
     rotate: 4,

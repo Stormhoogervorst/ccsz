@@ -1,0 +1,137 @@
+{
+  "name": "CCSZ Groen Palet (Profounders-stijl)",
+  "description": "Natuurlijk, warm groen palet ter vervanging van het oranje/cream Flexio-palet. Zacht limoen-accent, diep bosgroen voor donkere secties, off-white canvas. Past bij een zorgmerk: groei, vertrouwen, natuurlijkheid.",
+  "version": "1.0.0",
+  "kleuren": {
+    "accent_lime": {
+      "nieuw": "#C8E85F",
+      "naam": "Limoen Lime",
+      "rol": "Primair accent / energie, grote accentbanden, highlight-pills, footer-band",
+      "vervangt_oud": "#FB4D2A (signal orange) als PRIMAIRE accentkleur"
+    },
+    "lime_zacht": {
+      "nieuw": "#D4ED6E",
+      "naam": "Zacht Limoen",
+      "rol": "Lichtere variant van het accent voor grote vlakken/banden"
+    },
+    "bosgroen_diep": {
+      "nieuw": "#1E3A24",
+      "naam": "Diep Bosgroen",
+      "rol": "Donkere sectie-achtergronden, CTA-band, donkere tekst op licht",
+      "vervangt_oud": "#1A1A1A (near black / ink) voor donkere secties"
+    },
+    "bosgroen_medium": {
+      "nieuw": "#3E5E3A",
+      "naam": "Medium Bosgroen",
+      "rol": "Kaarten op donkere secties, secundaire groene vlakken"
+    },
+    "groen_helder": {
+      "nieuw": "#4E9F47",
+      "naam": "Helder Groen",
+      "rol": "Tertiair accent / interactie, iconen"
+    },
+    "lila_accent": {
+      "nieuw": "#D8D4F0",
+      "naam": "Zacht Lila",
+      "rol": "Subtiel contrast-accent (spaarzaam), bijv. 1 kaart of pill"
+    }
+  },
+  "neutraal": {
+    "background": {
+      "nieuw": "#F4F4EF",
+      "vervangt_oud": "#FBF4EC (cream canvas)"
+    },
+    "backgroundAlt": {
+      "nieuw": "#EBEBE4",
+      "vervangt_oud": "#F7EADD"
+    },
+    "surface": "#FFFFFF",
+    "surfaceMuted": {
+      "nieuw": "#E8E8E0",
+      "vervangt_oud": "#F3E7DA"
+    },
+    "border": {
+      "nieuw": "#DADAD0",
+      "vervangt_oud": "#EADBCB"
+    },
+    "textPrimary": {
+      "nieuw": "#1A2A1C",
+      "naam": "Bijna-zwart groen",
+      "vervangt_oud": "#1A1A1A"
+    },
+    "textSecondary": {
+      "nieuw": "#4A554A",
+      "vervangt_oud": "#5A534D"
+    },
+    "textMuted": {
+      "nieuw": "#8A938A",
+      "vervangt_oud": "#9A8F84"
+    },
+    "textOnDark": {
+      "nieuw": "#F4F4EF",
+      "rol": "Lichte tekst op bosgroene secties"
+    },
+    "textOnLime": {
+      "nieuw": "#1E3A24",
+      "rol": "Donkere bosgroene tekst op limoen accent (BELANGRIJK: nooit witte tekst op lime)"
+    }
+  },
+  "accent_afwisseling_tags": {
+    "beschrijving": "De sectie-tags wisselden af in teal/oranje/geel. In het groene palet worden dit drie groen-/accentvarianten.",
+    "kleur_1": {
+      "nieuw": "#C8E85F",
+      "tekst": "#1E3A24 (donker, want lime is licht)",
+      "vervangt_oud": "#FB4D2A oranje tag"
+    },
+    "kleur_2": {
+      "nieuw": "#1E3A24",
+      "tekst": "#F4F4EF (licht, op donkergroen)",
+      "vervangt_oud": "#5FC2AD teal tag"
+    },
+    "kleur_3": {
+      "nieuw": "#D8D4F0",
+      "tekst": "#1E3A24 (donker, op zacht lila)",
+      "vervangt_oud": "#FBCB6A geel tag"
+    }
+  },
+  "component_mapping": {
+    "primaire_knop": {
+      "oud": "oranje #FB4D2A met witte tekst",
+      "nieuw": "lime #C8E85F met DONKERE bosgroene tekst #1E3A24 — OF — diep bosgroen #1E3A24 met lichte tekst. Kies bosgroen als primair voor sterke leesbaarheid van de CTA, met lime als hover/secundair accent."
+    },
+    "outline_knop": {
+      "oud": "transparant met oranje rand en oranje tekst",
+      "nieuw": "transparant met bosgroene rand #1E3A24 en bosgroene tekst"
+    },
+    "stat_cards_hoe_het_werkt": {
+      "oud": "volledig oranje kaarten met witte tekst",
+      "nieuw": "diep bosgroen #1E3A24 kaarten met lichte tekst #F4F4EF en lime #C8E85F nummers/accenten"
+    },
+    "vallende_pills_waarom_aansluiten": {
+      "oud": "afwisselend oranje/teal/geel/blauw/roze/zwart",
+      "nieuw": "afwisselend in: lime #C8E85F (donkere tekst), bosgroen diep #1E3A24 (lichte tekst), medium bosgroen #3E5E3A (lichte tekst), helder groen #4E9F47 (lichte tekst), zacht lila #D8D4F0 (donkere tekst). Zorg voor voldoende variatie zodat geen twee aangrenzende pills dezelfde kleur hebben."
+    },
+    "zwevende_bollen": {
+      "oud": "teal/oranje/geel",
+      "nieuw": "lime #C8E85F / medium bosgroen #3E5E3A / helder groen #4E9F47"
+    },
+    "floating_labels_uitdaging": {
+      "oud": "oranje/teal/blauw (MINDER CONTRACTEN etc.)",
+      "nieuw": "bosgroen #1E3A24 / helder groen #4E9F47 / zacht lila #D8D4F0 — houd voldoende contrast met de tekst"
+    },
+    "check_iconen": {
+      "oud": "oranje starburst",
+      "nieuw": "helder groen #4E9F47 of bosgroen #1E3A24 starburst"
+    },
+    "cta_band": {
+      "oud": "oranje of donkere band",
+      "nieuw": "diep bosgroen #1E3A24 met lichte tekst en een lime #C8E85F primaire knop"
+    }
+  },
+  "contrast_waarschuwingen": [
+    "NOOIT witte tekst op de limoen-kleur (#C8E85F) — lime is licht, gebruik altijd donkere bosgroene tekst #1E3A24.",
+    "NOOIT donkere tekst op diep bosgroen (#1E3A24) — gebruik lichte tekst #F4F4EF.",
+    "Op zacht lila (#D8D4F0) altijd donkere tekst.",
+    "De primaire CTA-knop moet maximaal contrast en herkenbaarheid houden: bosgroen met lichte tekst is veiliger dan lime met donkere tekst voor de hoofdactie."
+  ]
+}
