@@ -204,7 +204,7 @@ export default function Home() {
                 <span className="block whitespace-normal sm:whitespace-nowrap">voor je doet</span>
               </h2>
 
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row">
+              <div className="mt-9 hidden gap-3 sm:flex-row md:flex md:flex-col lg:flex-row">
                 <a
                   href="#contact"
                   className="whitespace-nowrap rounded-pill bg-forest px-6 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
@@ -243,6 +243,21 @@ export default function Home() {
                 </li>
               ))}
             </ol>
+
+            <div className="flex flex-col gap-3 sm:flex-row md:hidden">
+              <a
+                href="#contact"
+                className="whitespace-nowrap rounded-pill bg-forest px-6 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
+              >
+                Word founding member
+              </a>
+              <a
+                href="#hoe-het-werkt"
+                className="whitespace-nowrap rounded-pill border-[1.5px] border-forest bg-transparent px-6 py-3 text-center text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
+              >
+                Lees hoe het werkt
+              </a>
+            </div>
           </div>
         </section>
 
