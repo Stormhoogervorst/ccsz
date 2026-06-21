@@ -92,7 +92,7 @@ export default function Home() {
                 </a>
                 <a
                   href="#hoe-het-werkt"
-                  className="rounded-pill border-[1.5px] border-forest bg-transparent px-7 py-3.5 text-center font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
+                  className="rounded-pill bg-lila px-7 py-3.5 text-center font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
                 >
                   Lees hoe het werkt
                 </a>
@@ -106,7 +106,7 @@ export default function Home() {
         <section id="aanleiding" className="bg-neutral-background">
           <div className="container-page grid gap-12 py-20 md:grid-cols-12 md:items-center md:py-28 lg:gap-16">
             <div className="md:col-span-7 lg:col-span-7">
-              <span className="inline-flex rounded-pill bg-forest px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-dark">
+              <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
                 De uitdaging
               </span>
               <h2 className="mt-6 text-display-h2 text-text-primary">
@@ -121,7 +121,7 @@ export default function Home() {
               <ul className="mt-9 space-y-6">
                 {challenges.map((item) => (
                   <li key={item.title} className="flex gap-4">
-                    <span className="relative mt-1 flex h-9 w-9 shrink-0 items-center justify-center text-green">
+                    <span className="relative mt-1 flex h-9 w-9 shrink-0 items-center justify-center text-lila">
                       <svg
                         aria-hidden="true"
                         viewBox="0 0 40 40"
@@ -129,7 +129,7 @@ export default function Home() {
                       >
                         <polygon points="20 1 24.2 8.8 32.4 5.8 31.1 14.4 39 18 31.5 22.7 35.4 30.6 26.7 30.5 23.6 38.8 17.6 32.4 10.6 37.6 9.1 29 0.5 27.4 5.8 20.4 0.5 13.4 9.1 11.8 10.6 3.2 17.6 8.4" />
                       </svg>
-                      <span className="absolute text-sm font-bold text-text-on-dark">
+                      <span className="absolute text-sm font-bold text-text-on-lime">
                         ✓
                       </span>
                     </span>
@@ -227,7 +227,7 @@ export default function Home() {
                   className="min-w-0 rounded-card bg-neutral-background-alt p-6 shadow-card sm:p-7"
                 >
                   <div className="flex flex-col gap-4 md:flex-row md:gap-5">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-pill bg-forest text-lg font-bold text-text-on-dark">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-pill bg-lila text-lg font-bold text-text-on-lime">
                       {index + 1}
                     </span>
 
@@ -252,7 +252,7 @@ export default function Home() {
           className="border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page py-20 text-center md:py-28">
-            <span className="inline-flex rounded-pill bg-forest px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-dark">
+            <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
               Waarom aansluiten
             </span>
 
@@ -276,7 +276,7 @@ export default function Home() {
           className="border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page py-20 text-center md:py-28">
-            <span className="inline-flex rounded-pill bg-lila px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
+            <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
               Hoe het werkt
             </span>
 
@@ -356,7 +356,7 @@ export default function Home() {
           <div className="container-page py-20 md:py-28">
             <div className="grid gap-10 md:grid-cols-12 lg:gap-16">
               <div className="md:sticky md:top-28 md:col-span-5 md:self-start">
-                <span className="inline-flex rounded-pill bg-forest px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-dark">
+                <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
                   Goed om te weten
                 </span>
                 <h2 className="mt-6 text-display-h2 text-text-primary">
@@ -377,7 +377,7 @@ export default function Home() {
         {/* CTA band */}
         <section className="relative overflow-hidden bg-forest text-text-on-dark">
           <div className="container-page relative z-10 py-24 text-center md:py-32">
-            <span className="inline-flex rounded-pill bg-neutral-surface px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-forest">
+            <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
               Word founding member
             </span>
 
@@ -394,7 +394,7 @@ export default function Home() {
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 href="#contact"
-                className="rounded-pill bg-lime px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lime-soft"
+                className="rounded-pill bg-lila px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
               >
                 Neem contact op
               </a>
@@ -414,9 +414,9 @@ export default function Home() {
         <div className="container-page grid gap-12 border-t border-neutral-border py-16 md:grid-cols-12">
           <div className="md:col-span-5">
             <Image
-              src="/CCSZ.png"
-              width={1415}
-              height={645}
+              src="/CCSZ Logo.png"
+              width={1993}
+              height={870}
               alt="CCSZ — Coöperatie voor Cultuursensitieve Zorg"
               className="h-10 w-auto"
             />

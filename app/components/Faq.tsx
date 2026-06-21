@@ -76,8 +76,8 @@ export function Faq() {
                   aria-hidden="true"
                   className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-pill transition-all duration-300 ${
                     isOpen
-                      ? "rotate-45 bg-forest text-text-on-dark"
-                      : "bg-neutral-surface text-text-secondary"
+                      ? "rotate-45 bg-lila text-text-on-lime"
+                      : "bg-lila text-text-on-lime"
                   }`}
                 >
                   <svg

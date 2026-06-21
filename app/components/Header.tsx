@@ -20,9 +20,9 @@ export function Header() {
           <div className="flex items-center gap-8 lg:gap-10">
             <a href="#top" className="flex shrink-0 items-center">
               <Image
-                src="/CCSZ.png"
-                width={1415}
-                height={645}
+                src="/CCSZ Logo.png"
+                width={1993}
+                height={870}
                 alt="CCSZ — Coöperatie voor Cultuursensitieve Zorg"
                 priority
                 className="h-10 w-auto"

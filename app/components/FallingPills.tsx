@@ -92,7 +92,7 @@ const pills: Pill[] = [
   },
   {
     label: "Samen",
-    color: "bg-forest text-text-on-dark",
+    color: "bg-lila text-text-on-lime",
     left: "37%",
     top: 80,
     rotate: -7,
