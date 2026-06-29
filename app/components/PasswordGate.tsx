@@ -80,10 +80,7 @@ export function PasswordGate({ children }: { children: React.ReactNode }) {
             className="mx-auto h-12 w-auto"
           />
 
-          <h1 className="mt-8 text-display-h3 font-bold text-text-primary">
-            Deze site is in ontwikkeling
-          </h1>
-          <p className="mt-3 text-text-secondary">
+          <p className="mt-8 text-text-secondary">
             Voer het wachtwoord in om verder te gaan.
           </p>
 
