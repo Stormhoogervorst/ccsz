@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { PasswordGate } from "./components/PasswordGate";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="nl" className={poppins.variable}>
       <body className="min-h-full flex flex-col bg-neutral-background text-text-primary antialiased">
-        {children}
+        <PasswordGate>{children}</PasswordGate>
       </body>
     </html>
   );
