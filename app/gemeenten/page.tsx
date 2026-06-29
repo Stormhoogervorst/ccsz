@@ -1,36 +1,43 @@
+import type { Metadata } from "next";
 import Image from "next/image";
-import { Header } from "./components/Header";
-import { Faq } from "./components/Faq";
-import { FallingPills } from "./components/FallingPills";
+import { Header } from "../components/Header";
+import { Faq } from "../components/Faq";
+import { FallingPills } from "../components/FallingPills";
+
+export const metadata: Metadata = {
+  title: "CCSZ — Cultuursensitieve zorg inkopen voor gemeenten & zorgkantoren",
+  description:
+    "Eén contractpartij, geborgde kwaliteit en een netwerk van gespecialiseerde aanbieders. CCSZ maakt het inkopen van cultuursensitieve zorg eenvoudig, betrouwbaar en toetsbaar.",
+};
 
 const challenges = [
   {
-    title: "Schaal ontbreekt",
-    text: "Als kleinere specialistische aanbieder mis je de omvang om zelfstandig te contracteren bij nieuwe aanbestedingen.",
+    title: "Veel losse contracten",
+    text: "Tientallen kleine aanbieders betekenen tientallen contracten, gesprekken en verantwoordingen.",
   },
   {
-    title: "Administratieve last groeit",
-    text: "Kwaliteitseisen en verantwoording kosten steeds meer tijd.",
+    title: "Kwaliteit moeilijk te toetsen",
+    text: "Zonder uniforme eisen is de kwaliteit per aanbieder ongelijk en lastig te vergelijken.",
   },
   {
-    title: "Versnippering",
-    text: "Je zichtbaarheid voor verwijzers, gemeenten en zorgkantoren maakt dat je gewoonweg niet wordt gevonden.",
+    title: "Hoge beheerlast",
+    text: "Monitoring, facturatie en verantwoording kosten onevenredig veel tijd.",
   },
 ];
 
 const floatingLabels = [
   {
-    label: "MINDER CONTRACTEN",
+    label: "VEEL CONTRACTEN",
     className:
       "left-4 top-8 -rotate-6 bg-forest text-text-on-dark sm:left-8 md:left-6 md:top-10",
   },
   {
-    label: "HOGERE LASTEN",
+    label: "ONGELIJKE KWALITEIT",
     className:
       "right-3 top-1/2 rotate-6 bg-green text-text-on-dark sm:right-8 md:right-6",
   },
   {
-    label: "ZWAKKERE POSITIE",
+    label: "HOGE BEHEERLAST",
     className:
       "bottom-8 left-8 rotate-3 bg-lila text-text-on-lime sm:left-14 md:bottom-10 md:left-8",
   },
@@ -38,31 +45,85 @@ const floatingLabels = [
 
 const benefits = [
   {
-    title: "Samen aanbestedingen winnen",
+    title: "Eén centraal aanspreekpunt",
     description:
-      "Wij dienen gezamenlijk in op aanbestedingen van gemeenten en zorgkantoren. Met de schaal en het aanbod die wij als individuele aanbieder missen, maken wij nu grote kans op contracten. Op basis van je aanbod van zorg en de beschikbaarheid ervan matcht de coöperatie de zorgvraag — zowel actief als doordat je zelf reageert. Transparant.",
+      "Geen tientallen losse contracten, maar één contractpartij voor het volledige cultuursensitieve aanbod. Eén aanspreekpunt voor afspraken, vragen en verantwoording.",
   },
   {
-    title: "Wij nemen je backoffice over",
+    title: "Geborgde, toetsbare kwaliteit",
     description:
-      "Administratie, contractbeheer en verantwoording regelen we centraal. Zo houd jij tijd over voor waar het echt om draait: de zorg.",
+      "Aanbieders worden alleen toegelaten als ze aan onze kwaliteitseisen voldoen. We toetsen doorlopend op IGJ-, SKJ- en ISO 9001-niveau, zodat u zeker bent van kwaliteit.",
   },
   {
-    title: "Kwaliteit en compliance garantie",
+    title: "Geprofessionaliseerd contact",
     description:
-      "Als coöperatie staan wij garant voor de kwaliteit van ons collectief — en dat vraagt iets van elk lid afzonderlijk. Leden zijn zelf verantwoordelijk voor het nakomen van de geldende kwaliteitseisen. De coöperatie ondersteunt hen daarin actief: ons team Kwaliteit & Compliance begeleidt leden bij kwaliteitsborging, interne audits en het voldoen aan IGJ-, SKJ- en ISO 9001-eisen. Regelmatige audits door de coöperatie zorgen ervoor dat kwaliteit geen momentopname is, maar een doorlopend proces. De wederzijdse rechten en plichten zijn vastgelegd in het huishoudelijk reglement. Dit kader beschermt niet alleen de coöperatie, maar ook elk individueel lid — en daarmee de kwaliteit van zorg die wij samen leveren.",
+      "Wij professionaliseren de communicatie tussen aanbieders en opdrachtgever: heldere afspraken, uniforme rapportage en korte lijnen.",
   },
   {
-    title: "Begeleiding bij compliance en audits",
+    title: "Lagere administratieve last",
     description:
-      "We loodsen je door certificeringstrajecten en audits, met experts die de eisen van opdrachtgevers door en door kennen.",
+      "Eén factuur, één verantwoordingslijn, één gesprekspartner. Wij nemen het coördinatiewerk uit handen, zodat uw team zich op beleid kan richten.",
   },
 ];
 
-export default function Home() {
+const steps = [
+  {
+    title: "Kennismaken",
+    text: "We verkennen samen uw inkoopbehoefte en hoe het cultuursensitieve aanbod van CCSZ daarop aansluit.",
+  },
+  {
+    title: "Afspraken maken",
+    text: "We leggen heldere afspraken vast over aanbod, kwaliteit, rapportage en verantwoording.",
+  },
+  {
+    title: "Samenwerken",
+    text: "U contracteert met één partij; wij coördineren de aangesloten aanbieders en borgen de kwaliteit.",
+  },
+];
+
+const pillLabels = [
+  "Kwaliteit",
+  "Eén aanspreekpunt",
+  "Toetsbaar",
+  "Betrouwbaar",
+  "Cultuursensitief",
+  "Dekkend",
+  "Ontzorgd",
+  "Transparant",
+];
+
+const faqItems = [
+  {
+    question: "Met wie sluiten we het contract?",
+    answer:
+      "Met de Coöperatie Cultuur Sensitieve Zorg U.A. als één contractpartij. Wij coördineren de aangesloten aanbieders en zijn uw centrale aanspreekpunt.",
+  },
+  {
+    question: "Hoe borgt CCSZ de kwaliteit?",
+    answer:
+      "Aanbieders worden alleen toegelaten als ze aan onze kwaliteitseisen voldoen, en we toetsen doorlopend op kaders als IGJ, SKJ en ISO 9001.",
+  },
+  {
+    question: "Welke zorgvormen biedt CCSZ?",
+    answer:
+      "Het volledige spectrum van cultuursensitieve zorg voor alle leeftijden: begeleiding, behandeling, therapie, thuiszorg, woonzorg, dagbesteding, opvang en meer.",
+  },
+  {
+    question: "Voor welke regio is CCSZ beschikbaar?",
+    answer:
+      "In de eerste fase richten we ons op de zorgregio's in Gelderland, met de ambitie daarna uit te breiden.",
+  },
+  {
+    question: "Hoe verloopt de facturatie en verantwoording?",
+    answer:
+      "Centraal via de coöperatie: één factuurstroom en één verantwoordingslijn, in plaats van losse afhandeling per aanbieder.",
+  },
+];
+
+export default function Gemeenten() {
   return (
     <div id="top" className="flex flex-1 flex-col bg-neutral-background">
-      <Header />
+      <Header ctaLabel="Plan een kennismaking" />
 
       <main className="flex-1">
         {/* Hero */}
@@ -70,20 +131,17 @@ export default function Home() {
           <div className="container-page relative z-10 pt-14 md:pt-20 lg:pt-24">
             <div className="max-w-3xl">
               <span className="inline-flex items-center rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
-                Coöperatie Cultuur Sensitieve Zorg
+                Voor gemeenten &amp; zorgkantoren
               </span>
 
               <h1 className="mt-7 text-display-h1 text-text-primary">
-                Samen leveren we
-                <br />
-                de beste zorg
+                Cultuursensitieve zorg inkopen, zonder zorgen
               </h1>
 
               <p className="mt-7 max-w-xl text-body-lg text-text-secondary">
-                Door de krachten van aanbieders in cultuursensitieve zorg te
-                bundelen, zorgen we samen voor een passende match op cultuur en
-                taal. Dat maakt het eenvoudig voor opdrachtgevers en verwijzers,
-                en zorgt voor goede zorg voor de cliënt.
+                Eén contractpartij, geborgde kwaliteit en een netwerk van
+                gespecialiseerde aanbieders. CCSZ maakt het inkopen van
+                cultuursensitieve zorg eenvoudig, betrouwbaar en toetsbaar.
               </p>
 
               <div className="mb-16 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center md:mb-24">
@@ -91,13 +149,13 @@ export default function Home() {
                   href="#contact"
                   className="rounded-pill bg-forest px-7 py-3.5 text-center font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
                 >
-                  Word founding member
+                  Plan een kennismaking
                 </a>
                 <a
-                  href="#hoe-het-werkt"
-                  className="rounded-pill bg-lila px-7 py-3.5 text-center font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
+                  href="#diensten"
+                  className="rounded-pill border-[1.5px] border-forest bg-transparent px-7 py-3.5 text-center font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
                 >
-                  Lees hoe het werkt
+                  Bekijk ons aanbod
                 </a>
               </div>
             </div>
@@ -105,7 +163,7 @@ export default function Home() {
 
         </section>
 
-        {/* Het probleem */}
+        {/* De uitdaging */}
         <section id="aanleiding" className="bg-neutral-background">
           <div className="container-page grid gap-12 py-20 md:grid-cols-12 md:items-center md:py-28 lg:gap-16">
             <div className="md:col-span-7 lg:col-span-7">
@@ -113,13 +171,12 @@ export default function Home() {
                 De uitdaging
               </span>
               <h2 className="mt-6 text-display-h2 text-text-primary">
-                De zorg verandert. We bewegen mee.
+                Goede cultuursensitieve zorg inkopen is complex
               </h2>
               <p className="mt-6 text-body-lg text-text-secondary">
-                Meedoen met aanbestedingen voor Jeugdwet, Wmo en Wlz wordt
-                steeds lastiger. Omdat de zorguitgaven en de controle op zorg
-                met de vele aanbieders onbeheersbaar worden, kiezen gemeenten en
-                zorgkantoren steeds vaker voor de grote partijen.
+                Cultuursensitieve zorg is versnipperd over veel kleine
+                aanbieders. Dat maakt inkoop arbeidsintensief, kwaliteit lastig
+                te bewaken en contractbeheer ingewikkeld.
               </p>
 
               <ul className="mt-9 space-y-6">
@@ -179,21 +236,20 @@ export default function Home() {
                 De oplossing
               </span>
               <h2 className="mt-6 text-display-h2 text-text-primary">
-                Eén coöperatie, alle slagkracht.
+                Eén aanspreekpunt, geborgde kwaliteit.
               </h2>
               <p className="mt-7 max-w-3xl text-body-lg text-text-secondary">
-                De Coöperatie Cultuur Sensitieve Zorg verenigt gespecialiseerde
-                aanbieders onder één merk. Wij treden op als contractpartij
-                richting opdrachtgevers; jij levert de zorg namens de coöperatie.
-                Zo bieden we de slagkracht en aantrekkelijkheid van een
-                collectief. Wij behouden onze eigen identiteit en blijven als
-                aanbieders geheel zelfstandig en authentiek.
+                CCSZ bundelt gespecialiseerde cultuursensitieve aanbieders onder
+                één coöperatie met één kwaliteitskeurmerk. U contracteert met één
+                betrouwbare partij; wij regelen de coördinatie, kwaliteit en
+                verantwoording achter de schermen. Zo koopt u breed
+                cultuursensitief aanbod in, met de eenvoud van één contract.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Services — Wat de coöperatie voor je doet */}
+        {/* Wat CCSZ voor u doet */}
         <section
           id="diensten"
           className="border-t border-neutral-border bg-neutral-background"
@@ -201,12 +257,12 @@ export default function Home() {
           <div className="container-page grid gap-12 py-20 md:grid-cols-12 md:items-start md:py-28 lg:gap-16">
             <div className="min-w-0 md:sticky md:top-28 md:col-span-5 lg:col-span-5">
               <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
-                Wat je krijgt
+                Wat wij bieden
               </span>
 
               <h2 className="mt-6 text-[clamp(1.85rem,3.4vw,2.85rem)] font-bold leading-[1.08] tracking-[-0.01em] text-text-primary">
-                <span className="block whitespace-normal sm:whitespace-nowrap">Wat de coöperatie</span>
-                <span className="block whitespace-normal sm:whitespace-nowrap">voor ons doet</span>
+                <span className="block whitespace-normal sm:whitespace-nowrap">Wat CCSZ</span>
+                <span className="block whitespace-normal sm:whitespace-nowrap">voor u doet</span>
               </h2>
 
               <div className="mt-9 hidden gap-3 sm:flex-row md:flex md:flex-col lg:flex-row">
@@ -214,13 +270,13 @@ export default function Home() {
                   href="#contact"
                   className="whitespace-nowrap rounded-pill bg-forest px-6 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
                 >
-                  Word founding member
+                  Plan een kennismaking
                 </a>
                 <a
-                  href="#hoe-het-werkt"
+                  href="#waarom"
                   className="whitespace-nowrap rounded-pill border-[1.5px] border-forest bg-transparent px-6 py-3 text-center text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
                 >
-                  Lees hoe het werkt
+                  Bekijk ons aanbod
                 </a>
               </div>
             </div>
@@ -254,40 +310,39 @@ export default function Home() {
                 href="#contact"
                 className="whitespace-nowrap rounded-pill bg-forest px-6 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
               >
-                Word founding member
+                Plan een kennismaking
               </a>
               <a
-                href="#hoe-het-werkt"
+                href="#waarom"
                 className="whitespace-nowrap rounded-pill border-[1.5px] border-forest bg-transparent px-6 py-3 text-center text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
               >
-                Lees hoe het werkt
+                Bekijk ons aanbod
               </a>
             </div>
           </div>
         </section>
 
-        {/* Behoud van eigen identiteit */}
+        {/* Waarom CCSZ — keyword pills */}
         <section
-          id="zelfstandigheid"
+          id="waarom"
           className="border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page py-20 text-center md:py-28">
             <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
-              Waarom aansluiten
+              Waarom CCSZ
             </span>
 
             <h2 className="mx-auto mt-6 max-w-4xl text-display-h2 text-text-primary">
-              Sterker samen, met je eigen onderneming
+              Betrouwbaar inkopen, breed gedekt
             </h2>
 
             <p className="mx-auto mt-7 max-w-3xl text-body-lg text-text-secondary">
-              Aansluiten betekent niet dat je opgaat in een groter geheel. Als
-              coöperatie U.A. behouden wij onze zelfstandigheid en eigen
-              identiteit — wij vormen één aanspreekpunt voor contracten,
-              kwaliteit en compliance richting opdrachtgevers.
+              Met CCSZ koopt u cultuursensitieve zorg in die aansluit bij een
+              diverse bevolking — geborgd, gecoördineerd en toetsbaar, zonder dat
+              u tientallen losse relaties hoeft te beheren.
             </p>
 
-            <FallingPills />
+            <FallingPills labels={pillLabels} />
           </div>
         </section>
 
@@ -302,30 +357,16 @@ export default function Home() {
             </span>
 
             <h2 className="mx-auto mt-6 max-w-3xl text-display-h2 text-text-primary">
-              Founding member worden in drie stappen
+              Samenwerken in drie stappen
             </h2>
 
             <p className="mx-auto mt-7 max-w-2xl text-body-lg text-text-secondary">
-              De coöperatie is in oprichting. We starten zodra de eerste founding
-              members zich verbinden — en werken de exacte voorwaarden samen met
-              elkaar uit.
+              We denken graag mee over hoe CCSZ aansluit bij uw inkoop- en
+              aanbestedingskalender.
             </p>
 
             <ol className="mt-12 grid gap-6 text-left sm:grid-cols-2 md:mt-16 md:grid-cols-3">
-              {[
-                {
-                  title: "Kennismaken",
-                  text: "We verkennen samen of wij bij elkaar passen.",
-                },
-                {
-                  title: "Aansluiten",
-                  text: "Je sluit je aan als founding member en samen bouwen wij aan compliance- en kwaliteitsinfrastructuur.",
-                },
-                {
-                  title: "Samen groeien",
-                  text: "We schrijven in op opdrachten en halen nieuwe contracten binnen. We vergroten het aantal leden, die uiteraard complementair zijn. Wij zorgen dat onze coöperatie een belangrijke partner is voor cultuursensitieve zorg en daardoor zichtbaar is.",
-                },
-              ].map((item, index) => (
+              {steps.map((item, index) => (
                 <li
                   key={item.title}
                   className="flex h-full flex-col rounded-card bg-forest p-8 text-text-on-dark shadow-card"
@@ -345,9 +386,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Onze missie — cultuursensitieve zorg (gespiegelde tegenhanger van "De oplossing") */}
+        {/* Onze missie — gespiegeld */}
         <section
-          id="cultuursensitief"
+          id="missie"
           className="relative overflow-hidden border-t border-neutral-border bg-neutral-background"
         >
           <div className="container-page relative py-20 md:py-28">
@@ -359,18 +400,11 @@ export default function Home() {
                 Waarom dit ertoe doet
               </h2>
               <p className="mt-7 max-w-3xl text-body-lg text-text-secondary md:ml-auto">
-                Cultuursensitieve zorg is geen aanvulling op het zorgstelsel —
-                het is een voorwaarde voor goede zorg. Mensen herstellen, groeien
-                en participeren beter wanneer zorg aansluit bij wie zij zijn: hun
-                taal, hun achtergrond, hun gewoonten en waarden. Een zorgstelsel
-                dat dit miskent, sluit mensen uit.
-                <br />
-                <br />
-                Wij maken ons sterk voor zorgaanbieders die deze zorg dagelijks
-                waarmaken. Door hen structureel te positioneren in de zorginkoop,
-                zorgen wij ervoor dat cultuursensitieve zorg niet langer
-                afhankelijk is van toeval of gunst — maar een vanzelfsprekend
-                onderdeel van een inclusief en rechtvaardig zorgstelsel.
+                Een diverse samenleving verdient zorg die aansluit bij ieders
+                taal, gewoonten en achtergrond. CCSZ zorgt dat gemeenten en
+                zorgkantoren dit aanbod betrouwbaar kunnen inkopen — en dat
+                cultuursensitieve aanbieders structureel een plek krijgen in de
+                zorginkoop.
               </p>
             </div>
           </div>
@@ -391,11 +425,12 @@ export default function Home() {
                   Veelgestelde vragen
                 </h2>
                 <p className="mt-6 max-w-sm text-body-lg text-text-secondary">
-                  Geen antwoord op je vraag? Laten we in gesprek gaan.
+                  Geen antwoord op uw vraag? We denken graag met u mee in een
+                  persoonlijk gesprek.
                 </p>
               </div>
               <div className="md:col-span-7">
-                <Faq />
+                <Faq items={faqItems} />
               </div>
             </div>
           </div>
@@ -408,17 +443,16 @@ export default function Home() {
         >
           <div className="container-page relative z-10 py-24 text-center md:py-32">
             <span className="inline-flex rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
-              Word founding member
+              Samenwerken
             </span>
 
             <h2 className="text-display-h2 mx-auto mt-6 max-w-3xl text-text-on-dark">
-              Bouw mee als founding member
+              Cultuursensitieve zorg inkopen met vertrouwen?
             </h2>
 
             <p className="mx-auto mt-8 max-w-xl text-body-lg text-text-on-dark/80">
-              We zoeken oprichtende leden die samen het fundament leggen voor
-              structurele, contractwaardige cultuursensitieve zorg in Gelderland —
-              en daarbuiten.
+              We denken graag met u mee over hoe CCSZ aansluit bij uw inkoop- en
+              aanbestedingsdoelen. Plan een vrijblijvende kennismaking.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -426,13 +460,7 @@ export default function Home() {
                 href="#contact"
                 className="rounded-pill bg-lila px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
               >
-                Neem contact op
-              </a>
-              <a
-                href="#hoe-het-werkt"
-                className="rounded-pill border-[1.5px] border-text-on-dark bg-transparent px-8 py-3.5 font-semibold text-text-on-dark transition-colors hover:bg-text-on-dark hover:text-forest"
-              >
-                Lees hoe het werkt
+                Plan een kennismaking
               </a>
             </div>
           </div>
@@ -452,15 +480,15 @@ export default function Home() {
             />
             <p className="mt-4 max-w-sm text-body-lg text-text-secondary">
               Zorgcoöperatie voor cultuursensitieve zorg. Samen sterker voor
-              cliënt, opdrachtgever en lid.
+              cliënt, lid en opdrachtgever.
             </p>
           </div>
 
           <div className="md:col-span-3">
             <p className="overline mb-4 text-text-muted">Contact</p>
             <ul className="space-y-2 text-text-secondary">
-              <li>Van Oldenbarneveldtstraat 92-4</li>
-              <li>6827 AN Arnhem</li>
+              <li>Placeholderstraat 1</li>
+              <li>0000 AA Plaatsnaam</li>
               <li>
                 <a
                   className="hover:text-forest"
@@ -470,8 +498,8 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a className="hover:text-forest" href="tel:+3121349682">
-                  00 213 49 682
+                <a className="hover:text-forest" href="tel:+31000000000">
+                  +31 (0)00 000 0000
                 </a>
               </li>
             </ul>
@@ -481,17 +509,17 @@ export default function Home() {
             <p className="overline mb-4 text-text-muted">Voor leden</p>
             <ul className="space-y-2 text-text-secondary">
               <li>
-                <a className="hover:text-forest" href="#diensten">
+                <a className="hover:text-forest" href="/#diensten">
                   Lid worden
                 </a>
               </li>
               <li>
-                <a className="hover:text-forest" href="#diensten">
+                <a className="hover:text-forest" href="/#diensten">
                   Diensten
                 </a>
               </li>
               <li>
-                <a className="hover:text-forest" href="#aanleiding">
+                <a className="hover:text-forest" href="/#aanleiding">
                   Over CCSZ
                 </a>
               </li>

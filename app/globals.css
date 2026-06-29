@@ -91,13 +91,21 @@
 :root {
   --container-max: 1280px;
   --container-px: clamp(2rem, 4vw, 4rem);
+  /* Zwevende navbar = pt-6 (1.5rem) + pill (~4rem) ≈ 5.5rem; rest is ademruimte
+     tot de pill-tag van de sectie. */
+  --scroll-offset: 10rem;
+}
+
+/* Buiten @layer zodat Tailwind-lagen dit niet overschrijven.
+   De documentscroller is <html>, dus scroll-padding-top hoort hier.
+   Dit zorgt voor de offset bij NATIVE ankersprongen (footer-links, hero-knoppen).
+   De hoofd-navigatie centreert via JS (zie Header) en is hier immuun voor. */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset);
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     background-color: var(--color-neutral-background);
     color: var(--color-text-primary);

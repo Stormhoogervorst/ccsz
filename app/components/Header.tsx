@@ -9,8 +9,36 @@ const navLinks = [
   { label: "Hoe het werkt", href: "#hoe-het-werkt" },
 ];
 
-export function Header() {
+type HeaderProps = {
+  ctaLabel?: string;
+};
+
+export function Header({ ctaLabel = "Neem deel" }: HeaderProps = {}) {
   const [open, setOpen] = useState(false);
+
+  // Eén gedeelde scrolllogica voor alle in-page ankers. Korte secties (die in
+  // de beschikbare schermhoogte passen) worden verticaal gecentreerd met
+  // navbar-compensatie; lange secties landen bovenaan onder de navbar.
+  const scrollToSection = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    if (!href.startsWith("#")) return;
+    const el = document.querySelector<HTMLElement>(href);
+    if (!el) return;
+
+    event.preventDefault();
+    const navbarOffset = 110;
+    const beschikbaar = window.innerHeight - navbarOffset;
+    const top = el.getBoundingClientRect().top + window.scrollY;
+    let doel;
+    if (el.offsetHeight <= beschikbaar) {
+      doel = top - (beschikbaar - el.offsetHeight) / 2 - navbarOffset / 2;
+    } else {
+      doel = top - navbarOffset;
+    }
+    window.scrollTo({ top: Math.max(0, doel), behavior: "smooth" });
+  };
 
   return (
     <header className="sticky top-0 z-50 pt-4 sm:pt-6">
@@ -34,6 +62,7 @@ export function Header() {
                 <a
                   key={link.label}
                   href={link.href}
+                  onClick={(event) => scrollToSection(event, link.href)}
                   className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
                 >
                   {link.label}
@@ -48,7 +77,7 @@ export function Header() {
               href="#contact"
               className="hidden rounded-pill bg-forest px-5 py-2.5 text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark sm:inline-flex"
             >
-              Word lid
+              {ctaLabel}
             </a>
 
             <button
@@ -85,7 +114,10 @@ export function Header() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    onClick={() => setOpen(false)}
+                    onClick={(event) => {
+                      scrollToSection(event, link.href);
+                      setOpen(false);
+                    }}
                     className="block rounded-md px-3 py-3 text-lg font-semibold tracking-tight text-text-primary transition-colors hover:bg-neutral-surface-muted"
                   >
                     {link.label}
@@ -98,7 +130,7 @@ export function Header() {
                   onClick={() => setOpen(false)}
                   className="block rounded-pill bg-forest px-5 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
                 >
-                  Word lid
+                  {ctaLabel}
                 </a>
               </li>
             </ul>

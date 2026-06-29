@@ -119,14 +119,30 @@ const pillBase =
 
 const viewport = { once: true, amount: 0.3 } as const;
 
-export function FallingPills() {
+type FallingPillsProps = {
+  /**
+   * Optional labels to render instead of the defaults. Mapped onto the existing
+   * position / colour / spring config by index, so the look and animation stay
+   * identical and only the text changes.
+   */
+  labels?: string[];
+};
+
+export function FallingPills({ labels }: FallingPillsProps = {}) {
   const reduceMotion = useReducedMotion();
+
+  const resolvedPills = labels
+    ? pills.map((pill, index) => ({
+        ...pill,
+        label: labels[index] ?? pill.label,
+      }))
+    : pills;
 
   return (
     <div className="mx-auto mt-12 w-full max-w-5xl md:mt-16">
       {/* Mobile / narrow: tidy wrapped row, subtler fall so nothing overlaps. */}
       <div className="flex flex-wrap items-center justify-center gap-3 md:hidden">
-        {pills.map((pill) => (
+        {resolvedPills.map((pill) => (
           <motion.span
             key={pill.label}
             className={`${pillBase} ${pill.color}`}
@@ -160,7 +176,7 @@ export function FallingPills() {
       {/* Desktop: compact, centred cluster of pills (~2 rows, lightly
           overlapping) that fall + bounce together. */}
       <div className="relative mx-auto hidden h-[180px] max-w-4xl md:block lg:h-[200px]">
-        {pills.map((pill) => (
+        {resolvedPills.map((pill) => (
           <motion.span
             key={pill.label}
             className={`${pillBase} absolute ${pill.color}`}

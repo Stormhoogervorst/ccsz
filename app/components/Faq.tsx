@@ -7,16 +7,16 @@ type FaqItem = {
   answer: string;
 };
 
-const items: FaqItem[] = [
+const defaultItems: FaqItem[] = [
   {
     question: "Verlies ik mijn zelfstandigheid?",
     answer:
-      "Nee. Je blijft een zelfstandige organisatie met je eigen identiteit en team. De coöperatie treedt op als contractpartij; jij levert de zorg als onderaannemer onder ons keurmerk.",
+      "Nee. Allen zijn en blijven een zelfstandige organisatie met je eigen identiteit en team. De coöperatie treedt op als contractpartij; jij levert de zorg als onderaannemer.",
   },
   {
     question: "Wat kost het lidmaatschap?",
     answer:
-      "De coöperatie is in oprichting en de exacte bijdragen werken we samen met de founding members uit. We bespreken dit graag in een persoonlijk gesprek.",
+      "De coöperatie is in oprichting en de exacte bijdragen werken we samen met de founding members uit. We bespreken dit graag in een persoonlijk gesprek. Doelstelling is een zo laag mogelijke afdracht door de leden.",
   },
   {
     question: "Voor welke regio geldt dit?",
@@ -31,11 +31,25 @@ const items: FaqItem[] = [
   {
     question: "Wat wordt er van mij verwacht aan kwaliteit?",
     answer:
-      "Je voldoet (of werkt toe) aan de gangbare kwaliteitskaders zoals IGJ, SKJ en ISO 9001. Daar krijg je onze ondersteuning bij.",
+      "Je voldoet aan de gangbare kwaliteitskaders zoals IGJ, SKJ en ISO 9001.",
+  },
+  {
+    question: "Wat wordt er van mij verwacht rondom compliance?",
+    answer:
+      "Je voldoet aan de gangbare compliance-eisen, zoals financiële gezondheid, VOG's, BIBOB, RvT en de gangbare aanbestedingseisen.",
+  },
+  {
+    question: "Kunnen wij elkaar beconcurreren?",
+    answer:
+      "Doelstelling is een complementair en volledig cultuursensitief aanbod te bieden, ook qua capaciteit. Aanbieders kunnen hetzelfde aanbieden, maar in totale capaciteit moet er voldoende werk zijn en groei mogelijk zijn. De opdrachten die binnenkomen zijn altijd transparant. In het huishoudelijk reglement staat uitgewerkt hoe het werkt bij gelijk aanbod en gelijke vraag.",
   },
 ];
 
-export function Faq() {
+type FaqProps = {
+  items?: FaqItem[];
+};
+
+export function Faq({ items = defaultItems }: FaqProps = {}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
