@@ -489,61 +489,26 @@ export default function Gemeenten() {
             <ul className="space-y-2 text-text-secondary">
               <li>Placeholderstraat 1</li>
               <li>0000 AA Plaatsnaam</li>
-              <li>
-                <a
-                  className="hover:text-forest"
-                  href="mailto:info@ccsz.nl"
-                >
-                  info@ccsz.nl
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="tel:+31000000000">
-                  +31 (0)00 000 0000
-                </a>
-              </li>
+              <li>info@ccsz.nl</li>
+              <li>+31 (0)00 000 0000</li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
             <p className="overline mb-4 text-text-muted">Voor leden</p>
             <ul className="space-y-2 text-text-secondary">
-              <li>
-                <a className="hover:text-forest" href="/#diensten">
-                  Lid worden
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="/#diensten">
-                  Diensten
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="/#aanleiding">
-                  Over CCSZ
-                </a>
-              </li>
+              <li>Lid worden</li>
+              <li>Diensten</li>
+              <li>Over CCSZ</li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
             <p className="overline mb-4 text-text-muted">Opdrachtgevers</p>
             <ul className="space-y-2 text-text-secondary">
-              <li>
-                <a className="hover:text-forest" href="#diensten">
-                  Gemeenten
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="#diensten">
-                  Zorgkantoren
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="#contact">
-                  Samenwerken
-                </a>
-              </li>
+              <li>Gemeenten</li>
+              <li>Zorgkantoren</li>
+              <li>Samenwerken</li>
             </ul>
           </div>
         </div>

@@ -50,7 +50,7 @@ const benefits = [
   {
     title: "Kwaliteit en compliance garantie",
     description:
-      "Als coöperatie staan wij garant voor de kwaliteit van ons collectief — en dat vraagt iets van elk lid afzonderlijk. Leden zijn zelf verantwoordelijk voor het nakomen van de geldende kwaliteitseisen. De coöperatie ondersteunt hen daarin actief: ons team Kwaliteit & Compliance begeleidt leden bij kwaliteitsborging, interne audits en het voldoen aan IGJ-, SKJ- en ISO 9001-eisen. Regelmatige audits door de coöperatie zorgen ervoor dat kwaliteit geen momentopname is, maar een doorlopend proces. De wederzijdse rechten en plichten zijn vastgelegd in het huishoudelijk reglement. Dit kader beschermt niet alleen de coöperatie, maar ook elk individueel lid — en daarmee de kwaliteit van zorg die wij samen leveren.",
+      "Als coöperatie staan wij garant voor de kwaliteit van ons collectief, en dat vraagt iets van elk lid. Leden zijn zelf verantwoordelijk voor het naleven van de kwaliteitseisen; ons team Kwaliteit & Compliance ondersteunt hen daarbij met kwaliteitsborging, interne audits en het voldoen aan IGJ-, SKJ- en ISO 9001-eisen. Regelmatige audits maken kwaliteit tot een doorlopend proces. De wederzijdse rechten en plichten staan in het huishoudelijk reglement, dat zowel de coöperatie als elk lid beschermt.",
   },
   {
     title: "Begeleiding bij compliance en audits",
@@ -67,38 +67,53 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero */}
         <section className="relative overflow-hidden bg-neutral-background">
-          <div className="container-page relative z-10 pt-14 md:pt-20 lg:pt-24">
-            <div className="max-w-3xl">
-              <span className="inline-flex items-center rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
-                Coöperatie Cultuur Sensitieve Zorg
-              </span>
+          <div className="container-page relative z-10 py-14 md:py-20 lg:py-24">
+            <div className="grid items-center gap-12 lg:grid-cols-[minmax(36rem,42rem)_minmax(16rem,1fr)] lg:gap-8 xl:grid-cols-[minmax(38.75rem,42.5rem)_minmax(18rem,1fr)] xl:gap-16">
+              <div className="w-full max-w-[42.5rem]">
+                <span className="inline-flex items-center rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
+                  Coöperatie Cultuur Sensitieve Zorg
+                </span>
 
-              <h1 className="mt-7 text-display-h1 text-text-primary">
-                Samen leveren we
-                <br />
-                de beste zorg
-              </h1>
+                <h1 className="mt-7 text-[clamp(1.75rem,8.75vw,4.5rem)] font-bold leading-none tracking-[-0.02em] text-text-primary sm:text-display-h1">
+                  <span className="block whitespace-nowrap">
+                    Samen leveren we
+                  </span>
+                  <span className="block whitespace-nowrap">de beste zorg</span>
+                </h1>
 
-              <p className="mt-7 max-w-xl text-body-lg text-text-secondary">
-                Door de krachten van aanbieders in cultuursensitieve zorg te
-                bundelen, zorgen we samen voor een passende match op cultuur en
-                taal. Dat maakt het eenvoudig voor opdrachtgevers en verwijzers,
-                en zorgt voor goede zorg voor de cliënt.
-              </p>
+                <p className="mt-7 max-w-xl text-body-lg text-text-secondary">
+                  Wij brengen gespecialiseerde aanbieders van cultuursensitieve zorg
+                  samen, zodat cliënten worden gematcht met een zorgverlener die hun
+                  taal spreekt en achtergrond begrijpt. Eén aanspreekpunt voor
+                  verwijzers, zorg die écht aansluit voor de cliënt.
+                </p>
 
-              <div className="mb-16 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center md:mb-24">
-                <a
-                  href="#contact"
-                  className="rounded-pill bg-forest px-7 py-3.5 text-center font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
-                >
-                  Word founding member
-                </a>
-                <a
-                  href="#hoe-het-werkt"
-                  className="rounded-pill bg-lila px-7 py-3.5 text-center font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
-                >
-                  Lees hoe het werkt
-                </a>
+                <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <a
+                    href="#contact"
+                    className="rounded-pill bg-forest px-7 py-3.5 text-center font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
+                  >
+                    Word founding member
+                  </a>
+                  <a
+                    href="#hoe-het-werkt"
+                    className="rounded-pill bg-lila px-7 py-3.5 text-center font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
+                  >
+                    Lees hoe het werkt
+                  </a>
+                </div>
+              </div>
+
+              <div className="hidden justify-end lg:flex">
+                <Image
+                  src="/icoontje.svg"
+                  width={2000}
+                  height={2000}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-auto w-full max-w-[24rem] lg:max-w-[28.75rem]"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -323,7 +338,7 @@ export default function Home() {
                 },
                 {
                   title: "Samen groeien",
-                  text: "We schrijven in op opdrachten en halen nieuwe contracten binnen. We vergroten het aantal leden, die uiteraard complementair zijn. Wij zorgen dat onze coöperatie een belangrijke partner is voor cultuursensitieve zorg en daardoor zichtbaar is.",
+                  text: "Wij schrijven in op opdrachten en halen nieuwe contracten binnen, vergroten ons aantal complementaire leden en groeien uit tot een zichtbare, toonaangevende partner voor cultuursensitieve zorg.",
                 },
               ].map((item, index) => (
                 <li
@@ -423,7 +438,7 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
-                href="#contact"
+                href="tel:+31629094899"
                 className="rounded-pill bg-lila px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
               >
                 Neem contact op
@@ -442,7 +457,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-neutral-background">
         <div className="container-page grid gap-12 border-t border-neutral-border py-16 md:grid-cols-12">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <Image
               src="/CCSZ Logo.png"
               width={1993}
@@ -456,66 +471,33 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="md:col-span-3">
+          <div className="md:col-span-4">
             <p className="overline mb-4 text-text-muted">Contact</p>
             <ul className="space-y-2 text-text-secondary">
-              <li>Van Oldenbarneveldtstraat 92-4</li>
+              <li className="whitespace-nowrap">
+                Van Oldenbarneveldtstraat 92-4
+              </li>
               <li>6827 AN Arnhem</li>
-              <li>
-                <a
-                  className="hover:text-forest"
-                  href="mailto:info@ccsz.nl"
-                >
-                  info@ccsz.nl
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="tel:+3121349682">
-                  00 213 49 682
-                </a>
-              </li>
+              <li>info@ccsz.nl</li>
+              <li>00 213 49 682</li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
             <p className="overline mb-4 text-text-muted">Voor leden</p>
             <ul className="space-y-2 text-text-secondary">
-              <li>
-                <a className="hover:text-forest" href="#diensten">
-                  Lid worden
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="#diensten">
-                  Diensten
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="#aanleiding">
-                  Over CCSZ
-                </a>
-              </li>
+              <li>Lid worden</li>
+              <li>Diensten</li>
+              <li>Over CCSZ</li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
             <p className="overline mb-4 text-text-muted">Opdrachtgevers</p>
             <ul className="space-y-2 text-text-secondary">
-              <li>
-                <a className="hover:text-forest" href="#diensten">
-                  Gemeenten
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="#diensten">
-                  Zorgkantoren
-                </a>
-              </li>
-              <li>
-                <a className="hover:text-forest" href="#contact">
-                  Samenwerken
-                </a>
-              </li>
+              <li>Gemeenten</li>
+              <li>Zorgkantoren</li>
+              <li>Samenwerken</li>
             </ul>
           </div>
         </div>
