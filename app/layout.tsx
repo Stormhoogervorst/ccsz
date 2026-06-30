@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { PasswordGate } from "./components/PasswordGate";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -14,6 +13,14 @@ export const metadata: Metadata = {
   title: "CCSZ — Zorgcoöperatie voor cultuursensitieve zorg",
   description:
     "CCSZ is een zorgcoöperatie voor cultuursensitieve zorg. Samen sterker: aanbestedingen winnen, schaalvoordelen benutten en kwaliteit borgen.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -24,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="nl" className={poppins.variable}>
       <body className="min-h-full flex flex-col bg-neutral-background text-text-primary antialiased">
-        <PasswordGate>{children}</PasswordGate>
+        {children}
       </body>
     </html>
   );

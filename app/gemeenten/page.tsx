@@ -457,7 +457,7 @@ export default function Gemeenten() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
-                href="#contact"
+                href="tel:+31621349682"
                 className="rounded-pill bg-lila px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
               >
                 Plan een kennismaking
@@ -490,7 +490,11 @@ export default function Gemeenten() {
               <li>Placeholderstraat 1</li>
               <li>0000 AA Plaatsnaam</li>
               <li>info@ccsz.nl</li>
-              <li>+31 (0)00 000 0000</li>
+              <li>
+                <a className="hover:text-forest" href="tel:+31621349682">
+                  +31 6 21349682
+                </a>
+              </li>
             </ul>
           </div>
 

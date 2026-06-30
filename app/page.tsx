@@ -438,7 +438,7 @@ export default function Home() {
 
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
-                href="tel:+31629094899"
+                href="tel:+31621349682"
                 className="rounded-pill bg-lila px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
               >
                 Neem contact op
@@ -479,7 +479,11 @@ export default function Home() {
               </li>
               <li>6827 AN Arnhem</li>
               <li>info@ccsz.nl</li>
-              <li>00 213 49 682</li>
+              <li>
+                <a className="hover:text-forest" href="tel:+31621349682">
+                  +31 6 21349682
+                </a>
+              </li>
             </ul>
           </div>
 
