@@ -21,14 +21,6 @@ const services: Service[] = [
     iconAlt: "Icoon voor samen aanbestedingen winnen",
   },
   {
-    title: "Wij nemen je backoffice over",
-    description:
-      "Administratie, contractbeheer en verantwoording regelen we centraal. Zo houd jij tijd over voor waar het echt om draait: de zorg.",
-    linkLabel: "Meer over de backoffice",
-    icon: "/icon-2.png",
-    iconAlt: "Icoon voor backoffice-ondersteuning",
-  },
-  {
     title: "Kwaliteitsmanagers tot je beschikking",
     description:
       "Onze kwaliteitscommissie ondersteunt je bij kwaliteitsborging, interne audits en het voldoen aan IGJ-, SKJ- en ISO 9001-eisen.",
