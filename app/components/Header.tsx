@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { PrimaryButton } from "./PrimaryButton";
 
 const navLinks = [
   { label: "Over CCSZ", href: "#aanleiding" },
@@ -41,7 +42,7 @@ export function Header({ ctaLabel = "Neem deel" }: HeaderProps = {}) {
   };
 
   return (
-    <header className="sticky top-0 z-50 pt-4 sm:pt-6">
+    <header className="fixed inset-x-0 top-0 z-50 bg-transparent pt-4 sm:pt-6">
       <div className="container-page">
         <div className="flex items-center justify-between gap-4 rounded-pill border border-neutral-border bg-neutral-surface/80 py-2.5 pl-3 pr-2.5 shadow-card backdrop-blur-md sm:pl-4 sm:pr-3">
           {/* Logo + nav (left of center) */}
@@ -73,12 +74,13 @@ export function Header({ ctaLabel = "Neem deel" }: HeaderProps = {}) {
 
           {/* Primary CTA + mobile toggle */}
           <div className="flex items-center gap-2">
-            <a
+            <PrimaryButton
               href="#contact"
-              className="hidden rounded-pill bg-forest px-5 py-2.5 text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark sm:inline-flex"
+              size="sm"
+              className="hidden sm:inline-flex"
             >
               {ctaLabel}
-            </a>
+            </PrimaryButton>
 
             <button
               type="button"
@@ -125,13 +127,14 @@ export function Header({ ctaLabel = "Neem deel" }: HeaderProps = {}) {
                 </li>
               ))}
               <li className="mt-1 px-1">
-                <a
+                <PrimaryButton
                   href="#contact"
+                  size="sm"
                   onClick={() => setOpen(false)}
-                  className="block rounded-pill bg-forest px-5 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
+                  className="flex w-full"
                 >
                   {ctaLabel}
-                </a>
+                </PrimaryButton>
               </li>
             </ul>
           </nav>

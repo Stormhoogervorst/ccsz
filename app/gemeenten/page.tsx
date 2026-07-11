@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Header } from "../components/Header";
 import { Faq } from "../components/Faq";
 import { FallingPills } from "../components/FallingPills";
+import { PrimaryButton } from "../components/PrimaryButton";
 
 export const metadata: Metadata = {
   title: "CCSZ — Cultuursensitieve zorg inkopen voor gemeenten & zorgkantoren",
@@ -145,12 +146,9 @@ export default function Gemeenten() {
               </p>
 
               <div className="mb-16 mt-9 flex flex-col gap-3 sm:flex-row sm:items-center md:mb-24">
-                <a
-                  href="#contact"
-                  className="rounded-pill bg-forest px-7 py-3.5 text-center font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
-                >
+                <PrimaryButton href="#contact" className="inline-flex">
                   Plan een kennismaking
-                </a>
+                </PrimaryButton>
                 <a
                   href="#diensten"
                   className="rounded-pill border-[1.5px] border-forest bg-transparent px-7 py-3.5 text-center font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
@@ -266,12 +264,12 @@ export default function Gemeenten() {
               </h2>
 
               <div className="mt-9 hidden gap-3 sm:flex-row md:flex md:flex-col lg:flex-row">
-                <a
+                <PrimaryButton
                   href="#contact"
-                  className="whitespace-nowrap rounded-pill bg-forest px-6 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
+                  className="inline-flex whitespace-nowrap"
                 >
                   Plan een kennismaking
-                </a>
+                </PrimaryButton>
                 <a
                   href="#waarom"
                   className="whitespace-nowrap rounded-pill border-[1.5px] border-forest bg-transparent px-6 py-3 text-center text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
@@ -306,12 +304,12 @@ export default function Gemeenten() {
             </ol>
 
             <div className="flex flex-col gap-3 sm:flex-row md:hidden">
-              <a
+              <PrimaryButton
                 href="#contact"
-                className="whitespace-nowrap rounded-pill bg-forest px-6 py-3 text-center text-sm font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
+                className="inline-flex whitespace-nowrap"
               >
                 Plan een kennismaking
-              </a>
+              </PrimaryButton>
               <a
                 href="#waarom"
                 className="whitespace-nowrap rounded-pill border-[1.5px] border-forest bg-transparent px-6 py-3 text-center text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-text-on-dark"
@@ -456,12 +454,9 @@ export default function Gemeenten() {
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <a
-                href="tel:+31621349682"
-                className="rounded-pill bg-lila px-8 py-3.5 font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
-              >
+              <PrimaryButton href="tel:+31621349682" onDark>
                 Plan een kennismaking
-              </a>
+              </PrimaryButton>
             </div>
           </div>
         </section>
