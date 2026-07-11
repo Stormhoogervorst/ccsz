@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Nunito } from "next/font/google";
-import heroPhoto from "@/public/Foto-1.jpeg";
+import heroPhoto from "@/public/foto-8.jpg";
 import { PrimaryButton } from "./PrimaryButton";
 
 const nunito = Nunito({
@@ -39,7 +39,7 @@ export function Hero() {
 
       <Image
         src={heroPhoto}
-        alt="Vrouwen in kleurrijke traditionele kleding in een warm gesprek tijdens een ontmoeting"
+        alt="Twee mannen lopen samen, arm om de schouder, over een bospad"
         fill
         priority
         fetchPriority="high"
