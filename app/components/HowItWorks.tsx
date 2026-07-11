@@ -24,7 +24,7 @@ const steps = [
     title: "Samen groeien",
     text: "Wij winnen nieuwe contracten, breiden ons ledennetwerk uit en groeien uit tot dé partner voor cultuursensitieve zorg.",
     image: {
-      src: "/foto-6.jpg",
+      src: "/foto-7.png",
       alt: "Groeiende samenwerking binnen de coöperatie voor cultuursensitieve zorg",
     },
   },
