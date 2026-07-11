@@ -63,52 +63,38 @@ export default function Home() {
         {/* Hero */}
         <section className="relative overflow-hidden bg-neutral-background">
           <div className="container-page relative z-10 py-14 md:py-20 lg:py-24">
-            <div className="grid items-center gap-12 lg:grid-cols-[minmax(36rem,42rem)_minmax(16rem,1fr)] lg:gap-8 xl:grid-cols-[minmax(38.75rem,42.5rem)_minmax(18rem,1fr)] xl:gap-16">
-              <div className="w-full max-w-[42.5rem]">
-                <span className="inline-flex items-center rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
-                  Coöperatie Cultuur Sensitieve Zorg
+            <div className="w-full max-w-[42.5rem]">
+              <span className="inline-flex items-center rounded-pill bg-lime px-3.5 py-1.5 text-overline font-semibold uppercase tracking-[0.08em] text-text-on-lime">
+                Coöperatie Cultuur Sensitieve Zorg
+              </span>
+
+              <h1 className="mt-7 text-[clamp(1.75rem,8.75vw,4.5rem)] font-bold leading-none tracking-[-0.02em] text-text-primary sm:text-display-h1">
+                <span className="block whitespace-nowrap">
+                  Samen leveren we
                 </span>
+                <span className="block whitespace-nowrap">de beste zorg</span>
+              </h1>
 
-                <h1 className="mt-7 text-[clamp(1.75rem,8.75vw,4.5rem)] font-bold leading-none tracking-[-0.02em] text-text-primary sm:text-display-h1">
-                  <span className="block whitespace-nowrap">
-                    Samen leveren we
-                  </span>
-                  <span className="block whitespace-nowrap">de beste zorg</span>
-                </h1>
+              <p className="mt-7 max-w-xl text-body-lg text-text-secondary">
+                Wij brengen gespecialiseerde aanbieders van cultuursensitieve zorg
+                samen, zodat cliënten worden gematcht met een zorgverlener die hun
+                taal spreekt en achtergrond begrijpt. Eén aanspreekpunt voor
+                verwijzers, zorg die écht aansluit voor de cliënt.
+              </p>
 
-                <p className="mt-7 max-w-xl text-body-lg text-text-secondary">
-                  Wij brengen gespecialiseerde aanbieders van cultuursensitieve zorg
-                  samen, zodat cliënten worden gematcht met een zorgverlener die hun
-                  taal spreekt en achtergrond begrijpt. Eén aanspreekpunt voor
-                  verwijzers, zorg die écht aansluit voor de cliënt.
-                </p>
-
-                <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-                  <a
-                    href="#contact"
-                    className="rounded-pill bg-forest px-7 py-3.5 text-center font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
-                  >
-                    Word founding member
-                  </a>
-                  <a
-                    href="#hoe-het-werkt"
-                    className="rounded-pill bg-lila px-7 py-3.5 text-center font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
-                  >
-                    Lees hoe het werkt
-                  </a>
-                </div>
-              </div>
-
-              <div className="hidden justify-end lg:flex">
-                <Image
-                  src="/icoontje.svg"
-                  width={2000}
-                  height={2000}
-                  alt=""
-                  aria-hidden="true"
-                  className="h-auto w-full max-w-[24rem] lg:max-w-[28.75rem]"
-                  priority
-                />
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a
+                  href="#contact"
+                  className="rounded-pill bg-forest px-7 py-3.5 text-center font-semibold text-text-on-dark transition-colors hover:bg-forest-dark"
+                >
+                  Word founding member
+                </a>
+                <a
+                  href="#hoe-het-werkt"
+                  className="rounded-pill bg-lila px-7 py-3.5 text-center font-semibold text-text-on-lime transition-colors hover:bg-lila/90"
+                >
+                  Lees hoe het werkt
+                </a>
               </div>
             </div>
           </div>
