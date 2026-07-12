@@ -148,7 +148,7 @@ export default function Home() {
             </span>
 
             <h2 className="mt-4 max-w-[16ch] text-[clamp(2rem,4.5vw,3.5rem)] font-bold leading-[1.1] tracking-[-0.01em] text-text-primary">
-              Wat de coöperatie voor ons doet
+              Wat de coöperatie voor je doet
             </h2>
 
             <div className="mt-12 md:mt-16">
