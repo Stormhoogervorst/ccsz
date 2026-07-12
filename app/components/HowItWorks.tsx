@@ -64,7 +64,7 @@ export function HowItWorks() {
               <div>
                 <span
                   aria-hidden="true"
-                  className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-forest text-sm font-semibold text-text-on-dark"
+                  className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-lime text-sm font-semibold text-text-on-lime"
                 >
                   {step.number}
                 </span>
